@@ -1,0 +1,2 @@
+server: root@104.237.131.210
+passwd: nextlab2018
