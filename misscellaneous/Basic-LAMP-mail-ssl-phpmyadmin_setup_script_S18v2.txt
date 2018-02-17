@@ -182,10 +182,11 @@ sudo service mysql restart
 #install malware detection and cleaner
 # use sudo -i to become root
 sudo -i
-wget http://150.252.118.143/maldetect-current.tar.gz
+wget http://www.rfxn.com/downloads/maldetect-current.tar.gz 
+
 tar xfz maldetect-current.tar.gz
 cd maldetect-*
-./install.sh
+sudo ./install.sh
 #the following command scans every file and may take 10... or 45 ... or 185 minutes
 # on a real system because there are 40,000 or 50,000 files on a real system.
 #On this virtual virtual system there are only 100 or 200.
@@ -194,5 +195,5 @@ cd maldetect-*
 #option to batch quarantine the results. To change this please set quar_hits=1
 #in conf.maldet.
 
-maldet -a /
+sudo maldet -a /
 
