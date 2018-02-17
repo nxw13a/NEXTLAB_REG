@@ -1,2 +1,6 @@
 server: root@104.237.131.210
 passwd: nextlab2018
+
+user: nextlab@104.237.131.210
+passphase: nextlab2018
+

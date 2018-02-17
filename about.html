@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ABOUT US</title>
+    <title>HOME</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="index.html">HOME</a></li>
-                    <li class="active">
+                    <li class="active"><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Mission</a></li>
@@ -55,6 +55,132 @@
             </div>
         </div>
     </nav>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar navbar-inverse").style.top = "0";
+            } else {
+                document.getElementById("navbar navbar-inverse").style.top = "-50px";
+            }
+        }
+    </script>
+    <style>
+        .bottom-left1 {
+            position: absolute;
+            bottom: 2.0em;
+            left: 3.0em;
+            font-size: larger;
+            color: white;
+            font-weight: bold;
+            background: rgb(98, 99, 102); /* Fallback for older browsers without RGBA-support */
+            background: rgba(98, 99, 102, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .video1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95%;
+            height: 95%;
+            margin-left: 2.5%;
+            margin-top: 1em;
+        }
+
+        .containerVid1 {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+
+        .background1 {
+            width: 100%;
+            margin-top: 112px;
+            height: 400px;
+            background-image: url(image/main_pic.jpg);
+            background-size: cover;
+            background-position: center center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .container1 {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        div.content {
+            padding: 1px 16px;
+        }
+
+        .column {
+            float: left;
+            width: 65%;
+            padding: 0.5em;
+            padding-left: 15%;
+        }
+
+        .column1 {
+            float: left;
+            width: 30%;
+            padding: 0.5em;
+            padding-right: 10%;
+        }
+
+        #sideCOL {
+            padding: 1px 16px 16px;
+            width: auto;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 55.4em ) {
+
+
+            .TEXT2 {
+                display: none;
+            }
+
+            .bottom-left {
+                bottom: 0.6em;
+                height: auto;
+                width: auto;
+                padding: 10px;
+            }
+
+            .background1 {
+                height: 320px;
+            }
+
+            .column {
+                width: 100%;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+
+            .column1 {
+                width: 100%;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+
+            #sideCOL {
+                margin-top: 1em;
+            }
+        }
+    </style>
+    <p>HELLO</p>
 
 </body>
 </html>
