@@ -23,8 +23,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li class="dropdown">
+                    <li ><a href="index.html">HOME</a></li>
+                    <li class="active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Mission</a></li>
@@ -95,12 +95,12 @@
   }
 
   ul.sidenav li a.active {
-      background-color: rgb(98,99,102);
+      background-color: #222;
       color: white;
   }
 
   ul.sidenav li a:hover:not(.active) {
-      background-color: rgb(98,99,102);
+      background-color: #222;
       color: white;
   }
 
@@ -109,16 +109,32 @@
       padding: 1px 16px;
 
   }
+        #padding_title {
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+        #REAL {
+  
+            color: white;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
   .column{
       float: left;
-      width: 75%;
+      width: 65%;
      padding: 0.5em;
+     padding-right: 13%;
 
   }
   .column1{
       float: left;
-      width: 25%;
+      width: 35%;
       padding: 0.5em;
+      padding-left: 13%;
 
   }
   #sideCOL{
@@ -131,7 +147,7 @@
       clear: both;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 740px) {
       ul.sidenav li a {
           text-align: center;
           float: none;
@@ -141,12 +157,20 @@
           height: auto;
           position: relative;
       }
-      .column {
-          width: 100%;
-      }
-      .column1 {
-          width: 100%;
-      }
+        #padding_title {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+        .column {
+            width: 100%;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
+        .column1 {
+            width: 100%;
+            padding-left: 4%;
+            padding-right: 4%;
+        }
       #quote{
           display: none;
       }
@@ -160,8 +184,9 @@
     </style>
 
     <p style="margin-top: 122px;"></p>
-
-    <h1 style="color: white; text-align: center; padding: 5px; width: 100%; background-color:rgb(98,99,102); border-radius: 10px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">About Us</h1>
+    <div id="padding_title">
+        <h1 id="REAL">About Us</h1>
+    </div>
   <div class="row">
   <div class="column1">
   <ul class="sidenav">
@@ -172,7 +197,7 @@
     <!--<li><a href="#contact">Student</a></li>-->
     <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
   </ul>
-  <aside  id="sideCOL" style="background-color: rgb(98,99,102); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+  <aside  id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
                  <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
                      <li><a  href="https://www.youtube.com/watch?v=YvHqLEqflws" target="_blank" style="color: rgb(123,164,221);">ACU is about to start researching something interesting</a></li>
@@ -190,7 +215,7 @@
                  </ul>
                   <hr />
                  <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; OUR CAMPUS</h3>
-                 <a href="http://www.acu.edu" target="_blank"><img src="newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></a>
+                 <a href="http://www.acu.edu" target="_blank"><img src="image/newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"/></a>
   </aside>
   </div>
   <div class="column">
