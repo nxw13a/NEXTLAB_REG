@@ -5,5 +5,6 @@ user: nextlab@104.237.131.210
 passphase: nextlab2018
 
 use this command after you change the website through WinSCP
+sudo rm -rf /var/www/html/*
 sudo mv /home/nextlab/NEXTLAB_REG/* /var/www/html/
 

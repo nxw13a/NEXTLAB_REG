@@ -1,17 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>MEMBERS</title>
+    <title>ABOUT</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body style="overflow-x: hidden;">
+<body>
 
-    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
+    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +26,7 @@
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">HOME</a></li>
-                    <li class="active">
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Mission</a></li>
@@ -34,7 +35,7 @@
                             <li><a href="members.html">NEXT's Team</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="whynuclear.html">Why Nuclear?</a></li>
@@ -59,88 +60,28 @@
     <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
         window.onscroll = function () { scrollFunction() };
+
         function scrollFunction() {
-            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)) {
-                document.getElementById("navbar navbar-inverse").style.Top = "10";
-                //console.log(document.body.scrollTop);
-
-
-
-                //console.log(document.documentElement.scrollTop);
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar navbar-inverse").style.top = "0";
             } else {
-                document.getElementById("navbar navbar-inverse").style.Top = "0";
-                //console.log("STOP");
-                //console.log(document.documentElement.scrollTop);
+                document.getElementById("navbar navbar-inverse").style.top = "-50px";
             }
         }
-        var lastScrollTop = 0;
-        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop) {
-                // downscroll code
-                console.log("TRUE");
-                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
-            } else {
-                // upscroll code
-                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
-            }
-            lastScrollTop = st;
-        }, false);
     </script>
 
 
     <style>
-  
-
-       
-        section {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid;
-        }
-
-        input {
-            display: none;
-        }
-
-        label {
-            display: inline-block;
-            width: auto;
-            padding: 15px 25px;
-            font-weight: 600;
-            font-size: larger;
-            text-align: center;
-            color: black;
-            border: 1px solid transparent lightgray;
-            background-color: lightgray;
-        }
-
-            label:before {
-                font-family: fontawesome;
-                font-weight: normal;
-            }
-
-
-
-
-            label:hover {
-                color: white;
-                background-color: rgb(98,99,102);
-                cursor: pointer;
-            }
-
-        input:checked + label {
+        .bottom-bar {
+            position: relative;
             color: white;
-            background-color: rgb(98,99,102);
-            border: 1px solid #ddd;
-            border-top: 2px solid rgb(98,99,102);
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
         }
 
-        #tab1:checked ~ #content1,
-        #tab2:checked ~ #content2, #tab3:checked ~ #content3 {
-            display: block;
-        }
         * {
             box-sizing: border-box;
         }
@@ -259,35 +200,19 @@
             #sideCOL {
                 display: none;
             }
-     
-        }
-        @media screen and (max-width: 500px) {
-            label {
-                display: block;
-            }
-        }
-        .bottom-bar {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
         }
     </style>
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-        <h1 id="REAL">NEXT's Team</h1>
+        <h1 id="REAL">Why Nuclear?</h1>
     </div>
     <div class="row1">
         <div class="column1">
             <ul class="sidenav">
-                <li><a href="about.html">Mission</a></li>
-                <li><a  href="history.html">History</a></li>
-                <li><a href="whyacu.html">Why ACU?</a></li>
-                <li><a class="active" href="members.html">NEXT's Team</a></li>
+                <li><a class="active" href="whynuclear.html">Why Nuclear?</a></li>
+                <li><a href="">About Reactor</a></li>
+                <li><a href="">Reactor's Benefits</a></li>
                 <!--<li><a href="#contact">Student</a></li>-->
                 <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
             </ul>
@@ -319,69 +244,22 @@
         </div>
         <div class="column">
             <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-
-                <div style="margin-top: 10px;">
-                </div>
-
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1">Members</label>
-
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2">Students</label>
-
-                <input id="tab3" type="radio" name="tabs">
-                <label for="tab3">Past Students</label>
-
-
-
-                <section id="content1">
-                    <a href="rusty_towell" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Rusty Towell</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Director of NEXT Lab, Professor of Engineering and Physics.</i></p>
-                    <hr style="border-color: black;" />
-
-                    <a href="tim_head" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Tim Head</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor Department of Engineering and Physics</i></p>
-                    <hr style="border-color: black;" />
-
-                    <a href="tony_hill" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Tony Hill</a>
-                    <p style="color:black; opacity: 0.5; font-size:  smaller;"><i>President of Starr Dover. Senior Physics Researcher.</i></p>
-                    <hr style="border-color: black;" />
-
-                    <a href="charles_ivey" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Charles Ivey</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Retired Professor of Physics Department.</i> </p>
-                    <hr style="border-color: black;" />
-
-                    <a href="rich_jinkerson" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Rich Jinkerson</a>
-                    <p style="color:black; opacity: 0.5; font-size:  smaller;"><i>Professor of Department of Engineering and Physics.</i> </p>
-                    <hr style="border-color: black;" />
-
-                    <a href="kim_pamplin" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Kim Pamplin</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor of Department of Chemistry and Biochemistry.</i> </p>
-                    <hr style="border-color: black;" />
-
-                    <a href="aaron_robison" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Aaron Robison</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor of Department of Chemistry and Biochemistry.</i> </p>
-                    <hr style="border-color: black;" />
-                </section>
-
-                <section id="content2">
-                    <a href="caleb_hicks" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Caleb Hicks</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Physics student '18</i></p>
-                    <hr style="border-color: black;" />
-
-
-
-                </section>
-
-                <section id="content3">
-                    <a href="bradley_mitchell" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Bradley Mitchell</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Senior Engineering student</i> </p>
-                    <hr style="border-color: black;" />
-
-                    <a href="olivia_t" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Olive Tuyishimire</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Sophomore Engineering student</i> </p>
-                    <hr style="border-color: black;" />
-                </section>
+                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">THE NEED FOR NUCLEAR</h2>
+                <p style="color: black;">The standard of living around the world is directly tied to the availability of energy. Energy is essential for the delivery of drinking water, high quality health care, security, commerce, communication and virtually every other part of our modern life. In places where the energy is expensive, intermittent, or unavailable, the quality of life is greatly decreased. Nuclear energy is the optimal source because it is inexpensive, safe, clean and available on demand.</p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">Nuclear is: EFFECTIVE</h3>
+                <p style="color:  black;">Energy needed to do work can be calculated as the product of the applied force and the distance over which it is applied.  Some sources of energy are more effective than others. The energy that can be stored in a stretched rubber band is limited by both magnitude of the force and the distance it can be stretched. That is why it is not feasible to power a car with a stretched rubber band.  So what force the optimal source to supply our energy needs?</p>
+                <p style="color:  black;">Fundamentally, there are only four distinct forces. Two are familiar, gravity and the electromagnetic force, while two are not as obvious on the macroscopic level. The two other forces are called the strong and weak nuclear forces. Because the strength of the force directly relates to the energy available, the stronger the force, the more energy is available. Chemical reactions like burning fossil fuels can release energy via the rearrangement of atoms in molecules. The electromagnetic force controls these processes. Since the electromagnetic force is so much stronger than gravity, a gallon of gas in a car engine can release many times more energy than a gallon of gas flowing through a hydroelectric generator. Similarly, the strong nuclear force is many times stronger than the electromagnetic force; so releasing the energy from rearranging the nucleus of an atom will produce more energy than rearranging atoms in molecules. In fact, the energy released in nuclear power is millions of times greater than any other energy source. </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">Nuclear is: SAFE and CLEAN</h3>
+                <p style="color:  black;">One of the most misunderstood aspects of nuclear power is the Concept of radiation. Fear of radiation leads many people to discount the value of nuclear power. However, nuclear power has been demonstrated to be safest and cleanest method to generate electricity on a commercial scale, and new advanced reactor designs will make significant improvements in both areas.</p>
+                <p style="color:  black;">Radiation is a natural part of our environment and comes in many forms, the most common of which is electromagnetic radiation that we more commonly call light or radio waves. These forms of radiation are useful and mostly harmless. Other forms of radiation include the emission of subatomic particles. These unseen and misunderstood particles generate most of the public’s fears of nuclear power. While exposure to large amounts of high-energy radiation can be dangerous, simple precautions can shield people from these particles. Depending on the type of particle and the speed that it moves, this protection can range from a piece of paper or your skin to lead lined walls.</p>
+                <p style="color:  black;">Every person is constantly  exposed to a variety of natural or background forms of radiation. Radiation can come from outer space, bananas, concrete, smoke detectors, medical x-rays, granite tabletops, and many other sources. Radiation is all around us and in most cases completely harmless.</p>
+                <p style="color: black;">Is nuclear power safe? Yes. The safety record of nuclear power is far superior to any other electricity producing method, including solar and wind. Is nuclear power clean? Yes. Nuclear power produces zero carbon dioxide emissions. It does produce some material that is radioactive, but this material can be safely stored so that it causes no harm. In both of these areas the development of advanced reactors will significantly improve the safety of reactors while decreasing the amount of radioactive material produced.</p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">Nuclear is: INEXPENSIVE</h3>
+                <p style="color: black;">The cost of electricity depends on many factors, including the cost of the power plant, fuel, and distribution. With new advanced reactor designs, the cost of power plants can be significantly reduced. The cost of nuclear fuels is insignificant since the quantity of fuel required is so small. Since these reactors can be located near the consumer, there is not a need for costly transmission lines. All of these factors mean electricity can be produced from advanced nuclear reactors at a true cost that is cheaper than any current energy source including coal, natural gas, solar, or wind.</p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">Nuclear is: ENERGY ON DEMAND</h3>
+                <p style="color: black;">In first world countries, energy is delivered to most consumers in the form of electricity. However, there is not an efficient method to store large quantities of energy in the form of electricity.</p>
+                <p style="color: black;">Batteries work fine for small devices that use very little energy such as cell phones, but are insufficient for larger energy needs such as those in an average home. Therefore, electricity must be produced in real time as the consumer uses it.</p>
+                <p style="color: black;">Sources of electricity that are intermittent such as wind and solar can never be depended on to supply electricity in a meaningful large-scale manner. On the other hand, nuclear reactors are designed to naturally produce more energy when there is a higher demand for electricity. This ability to produce electricity on demand and to follow the needed load is critical to supporting our standard of living and enabling industry to thrive.</p>
 
             </div>
         </div>
