@@ -1,17 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HISTORY</title>
+    <title>ABOUT REACTOR</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body >
+<body>
 
-    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
+    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +26,7 @@
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">HOME</a></li>
-                    <li class="active">
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Mission</a></li>
@@ -34,7 +35,7 @@
                             <li><a href="members.html">NEXT's Team</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="whynuclear.html">Why Nuclear?</a></li>
@@ -59,39 +60,28 @@
     <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
         window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)){
-                document.getElementById("navbar navbar-inverse").style.Top = "10";
-                //console.log(document.body.scrollTop);
 
-   
-                
-                //console.log(document.documentElement.scrollTop);
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar navbar-inverse").style.top = "0";
             } else {
-                document.getElementById("navbar navbar-inverse").style.Top = "0";
-                //console.log("STOP");
-                //console.log(document.documentElement.scrollTop);
+                document.getElementById("navbar navbar-inverse").style.top = "-50px";
             }
         }
-        var lastScrollTop = 0;
-        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop) {
-                // downscroll code
-                console.log("TRUE");
-                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
-            } else {
-                // upscroll code
-                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
-            }
-            lastScrollTop = st;
-        }, false);
     </script>
 
 
     <style>
-        
+        .bottom-bar {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -211,35 +201,24 @@
                 display: none;
             }
         }
-        .bottom-bar {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
-        }
     </style>
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-        <h1 id="REAL">History</h1>
+        <h1 id="REAL">About Reactor</h1>
     </div>
     <div class="row1">
         <div class="column1">
             <ul class="sidenav">
-                <li><a href="about.html">Mission</a></li>
-                <li><a class="active" href="history.html">History</a></li>
-                <li><a href="whyacu.html">Why ACU?</a></li>
-                <li><a href="members.html">NEXT's Team</a></li>
+                <li><a href="whynuclear.html">Why Nuclear?</a></li>
+                <li><a class="active" href="about_reactor.html">About Reactor</a></li>
+                <li><a href="reactor_benefits.html">Reactor's Benefits</a></li>
                 <!--<li><a href="#contact">Student</a></li>-->
                 <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
             </ul>
             <aside id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
                 <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
-        
                     <li><a href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab focuses research on solving global problems</a></li>
                     <p style="opacity: 0.5; font-size: smaller"<i>Jan 25,2018</i></p>
                     <li><a href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/" target="_blank" style="color: rgb(123,164,221);">Rusty Towell: Innovative scholar, down-to-earth teacher</a></li>
@@ -265,19 +244,18 @@
         </div>
         <div class="column">
             <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
- 
-                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">History of Molten Reactors</h2>
-                <iframe id='template' style="margin-left: 2.5%; border-color: none; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); padding: 10px 10px 10px 10px;" src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Ld29G7-5UeNy5gIeu017o5t36leYWVM_MR9Yk-L2cmo&font=Default&lang=en&initial_zoom=2&height=455' width='95%' height='470' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <p style="color: black; margin-top: 10px;">Liquid fueled molten salt reactors are not a new idea. There was a successful research program at Oak Ridge National Laboratory (ORNL) that was dedicated to this work. ORNL’s Molten-Salt Reactor Program (MSRP) was active from 1958-1976, and from it came important advances in nuclear reactor research and development. The objective of the MSRP was the development of liquid fueled molten salt reactors. This work was extremely successful and demonstrated the viability of these reactors.</p>
-                <p style="color: black;">The initial project within the MSRP was the Aircraft Nuclear Propulsion Program that aimed to make a fluid fueled reactor power plant for aircraft. Specifically, the Aircraft Reactor Experiment (ARE) was the first molten salt reactor ever built and operated.</p>
-                <p style="color: black;">The Molten-Salt Reactor Experiment (MSRE) was the second molten salt reactor ever built. It was operated from 1965 to 1969 provided valuable experience in making and operating a liquid fueled molten salt reactor. In 1960, designs of the reactor were drawn up, fabrication of parts and equipment began in 1962, and the reactor reached criticality on June 1, 1965. After criticality, sustained power operation began in December 1966 and the reactor operated until it was shut down permanently in December of 1969.</p>
-                <p style="color: black;">The MSRP at ORNL was extremely productive and informative. To this day, the MSRE is the most successful molten salt reactor ever operated. This research program was cancelled prematurely not because the technology was invalid or impractical, but for a host of non-scientific reasons, such as the development time and political, military, or commercial reasons.</p>
-                <p style="color: black;">The primary developer that was paying for the development cost for the original nuclear power plants was the U.S. Navy, which wanted the quickest path to deploying nuclear power for submarines. Since thorium is a fertile but not fissile isotope, the development of a thorium-fueled reactor was necessarily longer than the uranium fueled reactor and the Navy was not patient.</p>
-                <p style="color: black;">Politically, the development work for the uranium fuel cycle used by PWR was done at labs in California. Reactors that used uranium were better at producing plutonium and other weapons materials. This was viewed as an advantage during the Cold War.</p>
-                <p style="color: black;">Finally, the current fleet of PWR is supported by an industry that are generally opposed to any change that could negatively impact their revenues.</p>
-                <p style="color: black;">These reasons that might explain the unfortunate choices made 50 years ago to favor PWR are mostly irrelevant today.</p>
+                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">THE NEED FOR ADVANCED REACTORS</h2>
+                <p style="color: black;">There are approximately 100 commercial nuclear reactors in the United States. All of these reactors are based on technology more than 60 years old, called Pressurized Water Reactors (PWRs).  They use solid uranium fuel that has been enriched so that the fissile isotope (U-235) is more abundant than when uranium is found in nature. They all use water as both the moderator and primary coolant. These reactors are good, but newer reactors can be much better. Key advanced reactor design features that yield superior reactor performance are the uses of liquid fuel in a molten salt coolant.</p>
+                <h3 style="color:rgb(98,99,102); font-weight: bold; text-align: center;">SOLID VS. LIQUID FUEL</h3>
+                <p style="color: black;">Current nuclear reactors around the world load fuel into the reactor core in the form of a solid. Typically, uranium dioxide is formed into small pellets that are encased in special coatings to prevent the leakage of radioactive materials from the fuel rod into the primary coolant. As the fuel fission, the uranium atom is replaced by a pair of other atoms (called fission fragments). Over time, this process deteriorates the physical integrity of the fuel rod and limits the fuel utilization to only a few percent. Once 3 to 5 percent of the fuel is used, the remainder of the fuel and the fission fragments are set aside and classified as spent nuclear fuel, or more commonly, nuclear waste.</p>
+                <p style="color: black;">Three major shortcomings are inherent in the use of solid fuel: More than 95 percent of the original fuel is wasted; valuable materials produced as fission fragments (including lifesaving medical isotopes) can’t be harvested; and the potential exists for a serious reactor accident known as a reactor core meltdown during which the solid fuel overheats and melts.</p>
+                <p style="color: black;">Using a liquid fueled reactor can eliminate all of these shortcomings. In a liquid fueled reactor the fuel is suspending in the primary coolant like sugar in a cup of coffee.  The fuel remains in the reactor until it used resulting in near 100% fuel utilization.  The fission fragments are not hidden behind a metal cladding, but are also suspended in the coolant so they can be extracted and used.  Finally, there is no solid fuel rod to meld in an accident.  In fact, with a liquid fuel the reactor will automatically drain the fuel out of the core if anything causes the reactor temperature to rise too much.  Liquid fueled reactors are “walk-away-safe”.</p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">CHOICE OF COOLANT</h3>
+                <p style="color: black;">The purpose of the primary coolant is to absorb the energy released as heat by the fission process and transport that energy to the electricity producing side of the power plant. An ideal coolant would be able to contain a large amount of energy per volume (a quantity known as heat capacity) and remain a liquid at high temperatures. The most common choice of coolant used in nuclear reactors is water.</p>
+                <p style="color: black;">While water has a high heat capacity as a liquid, it becomes a gas at 100° C. As a gas, it has a very poor heat capacity. To allow the reactor to operate at higher temperatures, the entire reactor core and primary coolant system is designed to operate at very high pressures. This defining characteristic is why these reactors are referred to as Pressurized Water Reactors (PWRs). While this is a proven technology, the shortcomings of water as a coolant and the dangers of operating at high pressures directly contributed to the nuclear accident at Fukushima.</p>
+                <p style="color: black;">A far superior coolant is a molten salt. A salt in chemistry is just a substance that is held together by the electric force when positive and negative charged ions are mixed. Typically these combine in such a way to form regular crystal structures at room temperature much like ordinary table salt. However, if the temperature of the salt is raised high enough, the solid crystal will melt into a liquid and become a molten salt. Once melted, these molten salts look and flow much like water. Unlike water, though, they do not become a gas until they are over 1400° C, so the reactor core does not have to be built to operate at high pressures. This avoids both the cost and danger associated with PWR.</p>
+                <p style="color: black;">Finally, it should be noted that operating the reactor at higher temperatures allows a more than 50 percent increase in efficiency when converting heat to electricity</p>
 
-            
             </div>
         </div>
     </div>
