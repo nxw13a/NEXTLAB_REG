@@ -1,18 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>ABOUT REACTOR</title>
+    <title>MEMBERS</title>
     <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
-    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
+    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -26,7 +25,7 @@
                 <ul class="nav navbar-nav"></ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html">HOME</a></li>
-                    <li class="dropdown">
+                    <li class="active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">Mission</a></li>
@@ -35,7 +34,7 @@
                             <li><a href="members.html">NEXT's Team</a></li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="whynuclear.html">Why Nuclear?</a></li>
@@ -60,26 +59,84 @@
     <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
         window.onscroll = function () { scrollFunction() };
-
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("navbar navbar-inverse").style.top = "0";
+            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)) {
+                document.getElementById("navbar navbar-inverse").style.Top = "10";
+                //console.log(document.body.scrollTop);
+
+
+
+                //console.log(document.documentElement.scrollTop);
             } else {
-                document.getElementById("navbar navbar-inverse").style.top = "-50px";
+                document.getElementById("navbar navbar-inverse").style.Top = "0";
+                //console.log("STOP");
+                //console.log(document.documentElement.scrollTop);
             }
         }
+        var lastScrollTop = 0;
+        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+            if (st > lastScrollTop) {
+                // downscroll code
+                console.log("TRUE");
+                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
+            } else {
+                // upscroll code
+                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
+            }
+            lastScrollTop = st;
+        }, false);
     </script>
 
 
     <style>
-        .bottom-bar {
-            position: relative;
-            color: white;
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: auto;
+            padding: 15px 25px;
+            font-weight: 600;
+            font-size: larger;
             text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
+            color: black;
+            border: 1px solid transparent lightgray;
+            background-color: lightgray;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+            }
+
+
+
+
+            label:hover {
+                color: white;
+                background-color: rgb(98,99,102);
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: white;
+            background-color: rgb(98,99,102);
+            border: 1px solid #ddd;
+            border-top: 2px solid rgb(98,99,102);
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2, #tab3:checked ~ #content3 {
+            display: block;
         }
 
         * {
@@ -201,18 +258,35 @@
                 display: none;
             }
         }
+
+        @media screen and (max-width: 500px) {
+            label {
+                display: block;
+            }
+        }
+
+        .bottom-bar {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
+        }
     </style>
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-        <h1 id="REAL">Reactor's Benefits</h1>
+        <h1 id="REAL">NEXT's Team</h1>
     </div>
     <div class="row1">
         <div class="column1">
             <ul class="sidenav">
-                <li><a href="whynuclear.html">Why Nuclear?</a></li>
-                <li><a href="about_reactor.html">About Reactor</a></li>
-                <li><a class="active" href="reactor_benefits.html">Reactor's Benefits</a></li>
+                <li><a href="about.html">Mission</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="whyacu.html">Why ACU?</a></li>
+                <li><a class="active" href="members.html">NEXT's Team</a></li>
                 <!--<li><a href="#contact">Student</a></li>-->
                 <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
             </ul>
@@ -244,23 +318,89 @@
         </div>
         <div class="column">
             <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-                <h2 style="color:rgb(98,99,102); font-weight: bold; text-align: center;">ADDRESSING CRITICAL NEEDS</h2>
-                <p style="color: black;">Energy is essential for the delivery of drinking water, high-quality health care, security, commerce, communication and virtually every other part of modern life. In places where the supply of energy is expensive, intermittent or unavailable, the quality of life is greatly decreased. The living standard of people around the world is directly related to the amount of energy that is available for consumption.</p>
-                <p style="color: black;">Advanced reactors, such as Liquid-Fueled Molten Salt Reactors (LFMSRs), have never been more essential to addressing the critical needs of the world’s population.</p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">SAFER, CLEANER AND LESS EXPENSIVE ENERGY</h3>
-                <p style="color: black;">Liquid Fueled Molten Salt Reactors will produce energy that costs less, is safer, produces less waste, produces zero carbon dioxide, and is available on demand.</p>
-                <p style="color: black;">Several comprehensive economic studies have shown the real cost of electricity production from a variety of sources. While the number of variables that directly affect the cost of electricity production are large and include both real expenses (i.e. fuel, plant construction, operations) and artificial effects (such as taxes and subsidies), when all factors are considered the current cheapest form of electricity comes from natural gas, PWR, or coal. LFMSRs can produce electricity even cheaper than any of these because the reactors do not need to be built like PWR with large expensive pressure vessels, the cost of fuel is truly insignificant, and the small reactors can be mass produced and shipped to location yielding significant cost savings.</p>
-                <p style="color: black;">While nuclear power in western countries enjoys the best safety record, the improvements in LFMSR will provide significant safety enhancements. The use of low-pressure coolants will remove the largest single risk from current nuclear plants. The use of liquid fuel allows the reactor to be designed with a drain in the bottom of the reactor. If anything was to go wrong with the plant, the fuel and coolant would drain to a passively cooled sub-critical storage location where the salt would then solidify safely containing all of the fuel and radioactive fission fragments.  LFMSR are walk-away safe.</p>
-                <p style="color: black;">The largest source of waste in PWR is not really “waste” but would be better classified as “spent fuel.”  Only about 4 percent of the uranium is used and the rest is in a form that is no longer suitable for use.  So the vast majority of the fuel goes unused when the fuel is in a solid form. In a LFMSR, virtually all of the fuel is used and many of the fission fragments are harvestable for other uses. The end result is that very little real waste is generated and this waste does not include the long-lived radioactive waste commonly produced in PWRs.</p>
-                <p style="color: black;">Nuclear power produces zero carbon dioxide. So if you are concerned with CO2 production, then nuclear power is the only solution. Finally, nuclear power is available on demand so when more electricity is needed, more energy can be produced automatically. Nuclear power does not go away at night or when the wind stops blowing.</p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">PURE AND ABUNDANT WATER</h3>
-                <p style="color: black;">LFMSR operate at high temperatures that allow them to be efficient heat sources for industrial applications, including the production of synthetic fuels and desalination of water. Given that one in three people around the world suffer from a shortage of fresh water, LFMSR can meet a fundamental global need.</p>
-                <p style="color: black;">While most residential consumers use energy most commonly in the form of electricity, there are many commercial or industrial applications that need industrial scale heat.  With large amounts of high temperature heat, there are many industrial processes that are feasible or more efficient. A partial list of industrial applications include desalinating water, the production of synthetic fuels, and many other chemical production processes. Perhaps the most pressing global need is for abundant clean water.</p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">MEDICAL ISOTOPES</h3>
-                <p style="color: black;">Radioisotope treatment and diagnostic methods are very common in a variety of clinical practices, including oncology, cardiology, hematology, urology and nephrology. Molybdenum-99 (Mo-99) and bismuth-213 (Bi-213) are two such radiopharmaceuticals that show great promise, especially for cancer treatment. Mo-99 is in high demand because of its applications in radio-diagnostic procedures. It is used for single-photon emission computerized tomography, a method for imaging and making functional studies of areas of concern in a patient. This method allows doctors to make diagnoses quickly without the need for an invasive procedure.</p>
-                <p style="color: black;">Another medical isotope needed is Bi-213.  It has opened doors for targeted alpha therapy, which is used to kill dispersed cancers such as leukemia and lymphoma. This provides a new treatment option, one that would spare patients from the pain caused by chemotherapy and in limited trials has been amazingly effective.</p>
-                <p style="color: black;">Unfortunately, there have been recent and unexpected shortages of these much needed radioisotopes due to the poor way they are being produced. The current system for creating Mo-99 involves irradiating targets containing highly enriched uranium (HEU), which is a nuclear proliferation risk.  This method of production also has a terrible efficiency; only about 0.4% of the uranium fuel being used to create Mo-99 and the rest is wasted. Another drawback of this process is that it produces radioactive by-products with long half-lives.</p>
-                <p style="color: black;">With the current unstable and limited supply of Mo-99, doctors are being forced to make choices on which patient has a greater need for the procedures. To solve this shortage problem, people around the world are searching for a reliable supply of Mo-99 that doesn’t involve HEU in its production.  Currently there is no source for Bi-213.  In both cases, LFMSRs are the answer. Bi-213 and Mo-99 are both formed most efficiently in the natural nuclear processes inside a LFMSR.</p>
+
+                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center; ">Dr. Rusty Towell </h2>
+                <div style="margin-bottom: 10px; "><img src="image/rusty_t.jpg" style="display: block; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); max-width:100%; max-height:100%; margin: 0 auto;" /></div>
+
+                <div id="intro" style="text-align: center;">
+                    <p>
+                        <i>Director of NEXT Lab, </i>
+                    </p>
+                    <p>
+                        <i>Professor Department of Engineering and Physics</i>
+                    </p>
+                    <p>
+                        Email: <a style="color: rgb(123,164,221); font-weight: bold;" href="mailto:rusty.towell@acu.edu">rusty.towell@acu.edu</a>
+                    </p>
+                </div>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Education: </h3>
+                <p>
+                    <i>- PhD, University of Texas at Austin, Physics, 1999 </i>
+                </p>
+                <p>
+                    <i>- BS, Abilene Christian University, 1990</i>
+                </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Honors & Achievements: </h3>
+                <p>
+                    <i>- CAS Professional Service Award , ACU CAS, 2006</i>
+                </p>
+                <p>
+                    <i>- Faculty Renewal Leave, Abilene Christian University, 2006</i>
+                </p>
+                <p>
+                    <i>- Faculty Renewal Leave, Abilene Christian University, 2014</i>
+                </p>
+                <p>
+                    <i>- Wildcat WOW Award, Office of the President & Campus Recruiting, 2010</i>
+                </p>
+                <p>
+                    <i>- PHENIX Team Leader Award, PHENIX Collaboration, 2004</i>
+                </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Expertise and Repertoire: </h3>
+                <p>
+                    <i>- Nuclear Reactors, Nuclear Physics, Energy and Environment, Particle Detector Development</i>
+                </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Latest Books and Publications: </h3>
+                <p>
+                    <i>- Towell, R., Isenhower, L., & Daugherity, M. (2016) Measurement of parity-violating spin asymmetries in W± production at midrapidity in longitudinally polarized p+p collisions, Phys. Rev. D </i>
+                </p>
+                <p>
+                    <i>- Towell, R., Isenhower, L., & Daugherity, M. (2016) Centrality-Dependent Modification of Jet-Production Rates in Deuteron-Gold Collisions at sNN‾‾‾‾√=200  GeV, Phys. Rev. Lett.  </i>
+                </p>
+                <p>
+                    <i>- Isenhower, L., Towell, R., & Daugherity, M. (2015) Measurements of elliptic and triangular flow in high-multiplicity $^{3}$He$+$Au collisions at $\sqrt{s_{_{NN}}}=200$ GeV, Phys. Rev. Lett.  </i>
+                </p>
+                <p>
+                    <i>- Head, T., Dowdy, J., Isenhower, L., Isenhower, L., & Towell, R. (2016) Abilene Christian University Astronomy Observation Workbook: Physics 101 Spring 2016, Abilene, Texas , ACU SPS </i>
+                </p>
+                <p>
+                    <i>- Towell, R., Daugherity, M., Isenhower, L., Gainey, K., Hamilton, H., Pinson, R., Qu, H., Towell, C., & Towell, R. (2016) Forward J/ψ production in U + U collisions at sNN‾‾‾‾√=193 GeV, Phys. Rev. C  </i>
+                </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Latest Scholarly Presentations: </h3>
+                <p>
+                    <i>- Towell, R. (2016) Renewing Liquid Fueled Molten Salt Reactor Research and Development , American Physical Society Division of Nuclear Physics, Vancouver Canada, 2016</i>
+                </p>
+                <p>
+                    <i>- Towell, R. (2014) Recent Measurements with the NIFFTE Fission TPC and the Potential to Advance Thorium Fueled Reactors, Nuclear Science Symposium, Seattle, WA, 2014</i>
+                </p>
+                <p>
+                    <i>- Towell, R. (2015) Why Making Energy From Dirt Might Save The World, TEDxACU, Abilene, TX, 2015</i>
+                </p>
+                <p>
+                    <i>- Towell, R. (2015) Precise Nuclear Data Measurements Possible with the NIFFTE fissionTPC and Applications in Reactor Designs, Annual Fall Meeting of the APS Division of Nuclear Physics, Santa Fe, NM, 2015</i>
+                </p>
+                <p>
+                    <i>- Towell, R. (2016) Advancing Molten Salt Reactor Technology to meet the Needs of the World, Christian Scholars' Conference 2016, Lipscomb University, Nashville, TN, 2016</i>
+                </p>
+
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Professional Service: </h3>
+                <p>
+                    <i>- Thomas Jefferson National Accelerator Facility Directors Review Committee, Task Force Member, 2015 - 2015</i>
+                </p>
+                <h3 style="color: rgb(98,99,102); font-weight: bold;">Community Service: </h3>
+                <p>
+                    <i>- West Texas Science Center , Board Member, 2015 - present</i>
+                </p>
 
             </div>
         </div>

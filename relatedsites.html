@@ -1,11 +1,261 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <title>Related Sites</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
+
+    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="image/logo_newtag.png" height=85 width=200 /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Mission</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="whyacu.html">Why ACU?</a></li>
+                            <li><a href="members.html">NEXT's Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="whynuclear.html">Why Nuclear?</a></li>
+                            <li><a href="about_reactor.html">About Reactor</a></li>
+                            <li><a href="reactor_benefits.html">Reactor's Benefits</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="media_coverages.html">Media Coverages</a></li>
+                            <li><a href="relatedsites.html">Related Sites</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTACT US</a></li>
+
+                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar navbar-inverse").style.top = "0";
+            } else {
+                document.getElementById("navbar navbar-inverse").style.top = "-50px";
+            }
+        }
+    </script>
+
+
+    <style>
+        .bottom-bar {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul.sidenav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            background-color: rgb(225,225,225);
+            position: relative;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+            ul.sidenav li a {
+                display: block;
+                color: #000;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
+
+                ul.sidenav li a.active {
+                    background-color: #222;
+                    color: white;
+                }
+
+                ul.sidenav li a:hover:not(.active) {
+                    background-color: #222;
+                    color: white;
+                }
+
+        div.content {
+            padding: 1px 16px;
+        }
+
+        #padding_title {
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+
+        #REAL {
+            color: white;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .column {
+            float: left;
+            width: 65%;
+            padding: 0.5em;
+            padding-right: 13%;
+        }
+
+        .column1 {
+            float: left;
+            width: 35%;
+            padding: 0.5em;
+            padding-left: 13%;
+        }
+
+        #sideCOL {
+            margin-top: 10px;
+            padding: 1px 16px 16px;
+        }
+
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 740px) {
+            ul.sidenav li a {
+                text-align: center;
+                float: none;
+            }
+
+            ul.sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            #padding_title {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .column {
+                width: 100%;
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .column1 {
+                width: 100%;
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            #quote {
+                display: none;
+            }
+
+            #quote1 {
+                display: none;
+            }
+
+            #sideCOL {
+                display: none;
+            }
+        }
+    </style>
+
+    <p style="margin-top: 122px;"></p>
+    <div id="padding_title">
+        <h1 id="REAL">Media Coverages</h1>
+    </div>
+    <div class="row1">
+        <div class="column1">
+            <ul class="sidenav">
+                <li><a href="media_coverages.html">Media Coverages</a></li>
+                <li><a class="active" href="relatedsites.html">Related Sites</a></li>
+                <!--<li><a href="#contact">Student</a></li>-->
+                <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
+            </ul>
+            <aside id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
+                <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
+                    <li><a href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab focuses research on solving global problems</a></li>
+                    <p style="opacity: 0.5; font-size: smaller"<i>Jan 25,2018</i></p>
+                    <li><a href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/" target="_blank" style="color: rgb(123,164,221);">Rusty Towell: Innovative scholar, down-to-earth teacher</a></li>
+                    <p style="opacity: 0.5; font-size: smaller"<i>Jan 25,2018</i></p>
+                    <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
+                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 18, 2018</i></p>
+                    <li><a href="MediaCover" style="color: rgb(123,164,221);">more...</a></li>
+                </ul>
+                <!--
+                           <hr />
+                           <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; NEXT UPDATES</h3>
+                            <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
+                               <li><a href="MSTL" style="color: rgb(123,164,221);" >Status of Molten Salt Test Loop (MSTL) Assembly and Testing</a></li>
+                               <p style="opacity: 0.5; font-size: smaller"><i>Sept 13,2017</i></p>
+                               <li><a href="Characteristic" style="color: rgb(123,164,221);">Characterization of Salt Mixtures</a></li>
+                               <p style="opacity: 0.5; font-size: smaller"><i>July 2017</i></p>
+                           </ul>
+                  -->
+                <hr />
+                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; OUR CAMPUS</h3>
+                <a href="http://www.acu.edu" target="_blank"><img src="image/newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
+            </aside>
+        </div>
+        <div class="column">
+            <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">Related Sites</h2>
+                <h4 style="color: white; "><a href="https://ec.europa.eu/jrc/en/news/prostate-cancer-alpha-therapy-shows-impressive-results" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Hope for metastatic prostate cancer patients: targeted alpha therapy shows impressive results</a></h4>
+                <p style="color: GrayText; margin-left: 30px;"><i>Nearly three years of research have brought about remarkable results for the majority of 80 patients subjected to targeted alpha therapy of metastatic prostate cancer . . . (Dec 21, 2016)</i></p>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 20px;"></div>
+    <div class="bottom-bar">
+        &copy; 2018 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+    </div>
 
 </body>
 </html>
