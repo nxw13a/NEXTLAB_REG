@@ -135,7 +135,7 @@ sudo vi /etc/apache2/sites-available/default-ssl.conf
 #add virtual host 443. 
 # ---------------------- edit default sites available files below, as appropriate ------
 <VirtualHost *:443>
-        ServerAdmin abc12a@acu.edu
+        ServerAdmin abc12a@123.123.123.123
         ServerName 123.123.123.123:443
         DocumentRoot /var/www/html
         SSLEngine on
@@ -197,3 +197,19 @@ sudo ./install.sh
 
 sudo maldet -a /
 
+#TO SET UP DOMAIN NAME
+#go to squarespace (DR. TOWELL have access)
+#go to setting and find domain and go through domain
+add hostname: @ version: A ip4: 123.123.123.123
+add hostname: www version: A ip4: 123.123.123.123
+add hostname: * version: A ip4: 123.123.123.123
+
+#change hostname to acunextlab.org
+sudo vi /etc/hostname
+#change
+#ServerAdmin = username@domain.com
+#ServerName = acunextlab.org
+#ServerAlias = www.acunextlab.org
+#DocumentRoot /var/www/html/
+sudo vi /etc/apache2/sites-available/default-ssl.conf
+sudo vi /etc/apache2/sites-available/000-default.conf
