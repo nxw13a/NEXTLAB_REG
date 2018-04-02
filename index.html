@@ -129,7 +129,27 @@
                 padding: 0.5em;
                 padding-left: 12%;
             }
-
+        #upcoming_f {
+            color: white; 
+            text-align: center; 
+            margin-top: -5px;
+            margin-left: 10px; 
+            margin-right: 10px; 
+            padding: 10px; 
+            background-color: #222; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #upcoming_pic {
+            display: block; 
+            padding: 15px 10px 15px 10px; 
+            margin: 0 auto; 
+            margin-bottom: 25px; 
+            background-color: white; 
+            width: 80%;
+            height: auto; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
             .column1 {
                 float: left;
                 width: 30%;
@@ -176,6 +196,14 @@
                     padding-right: 3%;
                    
                 }
+                #upcoming_f{
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                #upcoming_pic{
+                    padding: 0px;
+                    width: 90%;
+                }
 
                 .column1 {
                     width: 100%;
@@ -197,7 +225,11 @@
         }
 
 
-
+        #upcoming{
+            /*switching back to no upcoming events*/
+            display: block;
+            /*display: none */
+        }
     </style>
     <div class="container1">
         <div class="background1">
@@ -209,6 +241,10 @@
     <p style="margin: 15px;"></p>
    <div class="row1">
         <div class="column">
+            <div id="upcoming">
+                <h2 id="upcoming_f" >UPCOMING EVENTS</h2>
+                <img id="upcoming_pic" src="image/events.jpg" />
+            </div>
             <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
                 <h3 class="TEXT2" style="margin-top: 20px; text-align: center; background-color: rgba(34,34,34,0.8); color: white; font-size: 18px;font-weight: bold;  padding: 20px;
                 border-radius: 10px;
@@ -246,7 +282,6 @@
                 </p>
                 <p style="margin-bottom: 20px;"></p>
             </div>
-
         </div>
         <div class="column1">
             <aside id="sideCOL" class="leftColumn" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">

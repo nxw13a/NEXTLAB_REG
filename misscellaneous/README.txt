@@ -7,7 +7,8 @@ The password is at Admin and Webmaster (please ask them).
 
 use this command after you change the website through WinSCP
 sudo rm -rf /var/www/html/*
-sudo mv /home/nextlab/NEXTLAB_REG/* /var/www/html/
+sudo mv /home/nextlab/GIT_HUB/NEXTLAB_REG/* /var/www/html/
 
 HOW TO INSTALL SSL certification:
 https://www.digicert.com/csr-ssl-installation/ubuntu-server-with-apache2-openssl.htm
+if the apachectl did not work just restart the server by "sudo reboot now"
