@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ABOUT</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="image/logo_newtag.png" height=85 width=200 /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">Mission</a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="whyacu.html">Why ACU?</a></li>
+                            <li><a href="members.html">NEXT's Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="whynuclear.html">Why Nuclear?</a></li>
+                            <li><a href="about_reactor.html">About Reactor</a></li>
+                            <li><a href="reactor_benefits.html">Reactor's Benefits</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="media_coverages.html">Media Coverages</a></li>
+                            <li><a href="relatedsites.html">Related Sites</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="contact_us.html">CONTACT US</a></li>
+
+                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar navbar-inverse").style.top = "0";
+            } else {
+                document.getElementById("navbar navbar-inverse").style.top = "-50px";
+            }
+        }
+    </script>
+
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        body {
+        }
+
+        .alert {
+            padding: 5px;
+            background-color: red;
+            color: white;
+        }
+
+        #assign {
+            margin-top: 50px;
+            width: 350px;
+            margin-right: 180px;
+            font-size: 18px;
+        }
+
+
+        .closebtn {
+            color: white;
+            font-weight: bold;
+            float: left;
+            font-size: 20px;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .input-group {
+            height: 50px;
+        }
+
+        *, *:before, *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            margin-left: 15%;
+            width: 35%;
+            padding: 2em;
+            font-size: large;
+        }
+
+        .column1 {
+            float: left;
+            width: 34%;
+            padding: 2em;
+            margin-left: 1%;
+            font-size: large;
+            margin-right: 15%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .title_contact {
+            color: white;
+            width: auto;
+            padding: 5px;
+            margin-left: 14%;
+            margin-right: 14%;
+
+            text-align: center;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        @media screen and (max-width: 750px) {
+            .column {
+                width: 100%;
+                margin-left: 0%;
+            }
+
+            .column1 {
+                width: 100%;
+                margin-left: 0%;
+                margin-right: 0%;
+                margin-top: 3%;
+            }
+
+            .title_contact {
+                max-width: 100%;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+        }
+        .bottom-bar {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
+        }
+    </style>
+    <p style="margin-top: 122px;"></p>
+    <div id="home-content" class="columnsContainer" >
+        <h1 class="title_contact">CONTACT US</h1>
+        <div class="row">
+            <div class="column" style=" justify-content: center; align-content:center; flex-direction: column; background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div style="text-align: center; color: white;">
+                    <h2 style="text-align: center; color: white; margin-top: -10px;">Any Questions, Email Us.</h2>
+                    <i><a href="mailto:rusty.towell@acu.edu" style="color: rgb(123,164,221); font-weight: bold;">rusty.towell@acu.edu</a></i>
+                    <p><i>The Engineering and Physics Laboratories at Bennett Gymnasium </i></p>
+                    <img src="image/filter.jpg" style="display: block; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); max-width:100%; max-height:100%; margin: 0 auto; margin-top: 1%;" />
+                </div>
+                <div style="display: none;">
+                <div id="message_x" runat="server" class="alert" style="width: auto;" visible="false">
+                    <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Your form has encountered a problem. Please scroll down to review.</strong>
+                </div>
+                <div id="FirstName" style="width: auto; ">
+
+                    <label style="color: white;">First Name *</label>
+                    <div id="message_x2" runat="server" class="alert" style="width: 150px;" visible="false">
+                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">First Name is required</strong>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user" style="color: rgb(98,99,102);"></i></span>
+                        <input id="first_name" runat="server" placeholder="First Name" class="form-control" type="text" style="font-size: large; height: 50px;">
+                    </div>
+                </div>
+
+                <div id="LastName" style="width: auto;">
+
+                    <label style="color: white;  margin-top: 20px; ">Last Name *</label>
+                    <div id="message_x3" runat="server" visible="false" class="alert" style="width: 150px;">
+                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Last Name is required</strong>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user" style="color: rgb(98,99,102);"></i></span>
+                        <input id="last_name" runat="server" placeholder="Last Name" class="form-control" type="text" style="font-size: large; height: 50px;">
+                    </div>
+                </div>
+
+                <div id="Email" style="width: auto;">
+                    <label style="color: white; margin-top: 20px;">E-Mail *</label>
+                    <div id="message_x4" runat="server" visible="false" class="alert" style="width: 150px;">
+                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Email is required</strong>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" style="color: rgb(98,99,102);"></i></span>
+                        <input id="email" runat="server" placeholder="E-Mail Address" class="form-control" type="text" style="font-size: large; height: 50px;">
+                    </div>
+                </div>
+
+                <div id="Subject" style="width: auto;">
+                    <label style="color: white;  margin-top: 20px;">Subject *</label>
+                    <div id="message_x5" runat="server" visible="false" class="alert" style="width: 150px;">
+                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Subject is required</strong>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" style="color:rgb(98,99,102);"></i></span>
+                        <textarea class="form-control" id="\Subj" name="Subj" placeholder="Subject" style="font-size: large; height: 50px;"></textarea>
+                    </div>
+                </div>
+
+                <div id="Message" style="width: auto;">
+                    <label style="color: white; margin-top: 20px;">Message *</label>
+                    <div id="message_x6" runat="server" visible="false" class="alert" style="width: 150px;">
+                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Message is required</strong>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" style="color: rgb(98,99,102);"></i></span>
+                        <textarea class="form-control" id="Comm" name="Comm" placeholder="Message" style="height: 200px; font-size: large;"></textarea>
+                    </div>
+                </div>
+                <div id="button_p">
+                    <asp:Button id="Button1" BorderStyle="Solid" style="color: white; background-color: rgb(98,99,102); border-radius: 5px; width: 100px; height: 40px; margin-top: 10px;" runat="server" Text="Send" OnClick="Send_message" OnClientClick="this.disabled = true; this.value = 'Submitting...';" UseSubmitBehavior="false" />
+                </div>
+                <div id="message_x7" runat="server" visible="false" class="alert" style="width: auto; margin-top: 30px;">
+                    <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Your form has encountered a problem. Please scroll up to review.</strong>
+                </div>
+                </div>
+            </div>
+            <aside class="column1" style="color: white; background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <div>NEXT LAB</div>
+                <div>1600 Campus Ct, </div>
+                <div>Abilene, TX 79699</div>
+                <div>Email: <a href="mailto:rusty.towell@acu.edu" style="color: rgb(123,164,221); font-weight: bold;">rusty.towell@acu.edu</a></div>
+                <div>Tel: <a href="tel:325-674-2034" style="color: rgb(123,164,221); font-weight: bold;">325-674-2034</a></div>
+                <div id="map" style="margin-top: 20px;"></div>
+                <script>
+                    function initMap() {
+
+                        var uluru = { lat: 32.4672731, lng: -99.70838428 };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 18,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map,
+                            center: uluru
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU4sDSjld75vvnsX7oU2sxvq8q8gnKm_4&callback=initMap">
+                </script>
+            </aside>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 20px;"></div>
+    <div class="bottom-bar">
+        &copy; 2018 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+    </div>
+
+
+
+</body>
+</html>
