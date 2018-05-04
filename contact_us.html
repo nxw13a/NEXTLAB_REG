@@ -182,20 +182,20 @@
         <h1 class="title_contact">CONTACT US</h1>
         <div class="row">
             <div class="column" style=" justify-content: center; align-content:center; flex-direction: column; background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <div style="text-align: center; color: white;">
+                <!--<div style="text-align: center; color: white;">
                     <h2 style="text-align: center; color: white; margin-top: -10px;">Any Questions, Email Us.</h2>
                     <i><a href="mailto:rusty.towell@acu.edu" style="color: rgb(123,164,221); font-weight: bold;">rusty.towell@acu.edu</a></i>
                     <p><i>The Engineering and Physics Laboratories at Bennett Gymnasium </i></p>
                     <img src="image/filter.jpg" style="display: block; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); max-width:100%; max-height:100%; margin: 0 auto; margin-top: 1%;" />
-                </div>
-                <div style="display: none;">
-                <div id="message_x" runat="server" class="alert" style="width: auto;" visible="false">
+                </div>-->
+                <div style="display: block;">
+                <div id="message_x" runat="server" class="alert" style="width: auto; display: none;" >
                     <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Your form has encountered a problem. Please scroll down to review.</strong>
                 </div>
                 <div id="FirstName" style="width: auto; ">
 
                     <label style="color: white;">First Name *</label>
-                    <div id="message_x2" runat="server" class="alert" style="width: 150px;" visible="false">
+                    <div id="message_x2" runat="server" class="alert" style="width: 150px; display: none;">
                         <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">First Name is required</strong>
                     </div>
                     <div class="input-group">
@@ -207,7 +207,7 @@
                 <div id="LastName" style="width: auto;">
 
                     <label style="color: white;  margin-top: 20px; ">Last Name *</label>
-                    <div id="message_x3" runat="server" visible="false" class="alert" style="width: 150px;">
+                    <div id="message_x3" runat="server" class="alert" style="width: 150px; display: none;">
                         <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Last Name is required</strong>
                     </div>
                     <div class="input-group">
@@ -218,41 +218,31 @@
 
                 <div id="Email" style="width: auto;">
                     <label style="color: white; margin-top: 20px;">E-Mail *</label>
-                    <div id="message_x4" runat="server" visible="false" class="alert" style="width: 150px;">
-                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Email is required</strong>
-                    </div>
+ 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope" style="color: rgb(98,99,102);"></i></span>
-                        <input id="email" runat="server" placeholder="E-Mail Address" class="form-control" type="text" style="font-size: large; height: 50px;">
+                        <input id="email" placeholder="E-Mail Address" class="form-control" type="text" style="font-size: large; height: 50px;">
                     </div>
                 </div>
 
                 <div id="Subject" style="width: auto;">
                     <label style="color: white;  margin-top: 20px;">Subject *</label>
-                    <div id="message_x5" runat="server" visible="false" class="alert" style="width: 150px;">
-                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Subject is required</strong>
-                    </div>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" style="color:rgb(98,99,102);"></i></span>
-                        <textarea class="form-control" id="\Subj" name="Subj" placeholder="Subject" style="font-size: large; height: 50px;"></textarea>
+                        <textarea class="form-control" id="Subj" name="Subj" placeholder="Subject" style="font-size: large; height: 50px;"></textarea>
                     </div>
                 </div>
 
                 <div id="Message" style="width: auto;">
                     <label style="color: white; margin-top: 20px;">Message *</label>
-                    <div id="message_x6" runat="server" visible="false" class="alert" style="width: 150px;">
-                        <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Message is required</strong>
-                    </div>
+
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-pencil" style="color: rgb(98,99,102);"></i></span>
                         <textarea class="form-control" id="Comm" name="Comm" placeholder="Message" style="height: 200px; font-size: large;"></textarea>
                     </div>
                 </div>
                 <div id="button_p">
-                    <asp:Button id="Button1" BorderStyle="Solid" style="color: white; background-color: rgb(98,99,102); border-radius: 5px; width: 100px; height: 40px; margin-top: 10px;" runat="server" Text="Send" OnClick="Send_message" OnClientClick="this.disabled = true; this.value = 'Submitting...';" UseSubmitBehavior="false" />
-                </div>
-                <div id="message_x7" runat="server" visible="false" class="alert" style="width: auto; margin-top: 30px;">
-                    <span class="closebtn">&times; </span> <strong style="margin-left: 10px; font-size: 10px;">Your form has encountered a problem. Please scroll up to review.</strong>
+                    <button id="Button1" BorderStyle="Solid" style="color: white; background-color: rgb(98,99,102); border-radius: 5px; width: 100px; height: 40px; margin-top: 10px;" runat="server" Text="Send" OnClick="Send_message" OnClientClick="this.disabled = true; this.value = 'Submitting...';" UseSubmitBehavior="false" />
                 </div>
                 </div>
             </div>
