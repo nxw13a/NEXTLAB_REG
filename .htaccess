@@ -1,1 +1,9 @@
-Options -Indexes
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+  RewriteCond %{REQUEST_URI} "/image/" [OR]
+  RewriteCond %{REQUEST_URI} "/.vs/" [OR]
+  RewriteCond %{REQUEST_URI} "/misscellaneous/" [OR]
+  RewriteCond %{REQUEST_URI} "/.git/"
+  RewriteRule (.*) $1 [L]
