@@ -4,7 +4,7 @@
     <title>RELATED SITES</title>
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -124,8 +124,14 @@
             padding-left: 12%;
             padding-right: 12%;
         }
+        
+        #padding_title {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
 
         #REAL {
+            
             color: white;
             text-align: center;
             padding: 5px;
@@ -133,25 +139,35 @@
             background-color: #222;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
         }
-
-        .column {
+        
+        #column1 {
+        
             float: left;
-            width: 65%;
+            width: 50%;
             padding: 0.5em;
             padding-right: 13%;
+            margin-right: 20px;
         }
 
-        .column1 {
+        #column2 {
+        
             float: left;
-            width: 35%;
-            padding: 0.5em;
-            padding-left: 13%;
+            width: 48%;
+        
         }
+        
 
         #sideCOL {
             margin-top: 10px;
             padding: 1px 16px 16px;
+        }
+        
+        .row1{
+            margin: 0% 4% 0% 4%;
+            padding-left: 6%;
+            padding-right: 6%;
         }
 
         .row1:after {
@@ -159,7 +175,7 @@
             display: table;
             clear: both;
         }
-
+        
         @media screen and (max-width: 740px) {
             ul.sidenav li a {
                 text-align: center;
@@ -170,23 +186,6 @@
                 width: 100%;
                 height: auto;
                 position: relative;
-            }
-
-            #padding_title {
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-
-            .column {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .column1 {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
             }
 
             #quote {
@@ -208,57 +207,13 @@
         <h1 id="REAL">Related Sites and Stories</h1>
     </div>
     <div class="row1">
-        <div class="column1">
-            <ul class="sidenav">
-                <li><a href="media_coverages">Media Coverages</a></li>
-                <li><a class="active" href="relatedsites">Related Sites</a></li>
-                <!--<li><a href="#contact">Student</a></li>-->
-                <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
-            </ul>
-            <aside id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
-                <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
-
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/" target="_blank" style="color: rgb(123,164,221);">Abilene Christian University science faculty gets salty over future of nuclear power</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>July 7, 2019</i></p>
-
-                	<li>
-                        <a href="http://acu.today/2019/01/29/next-lab-brings-pfeifer-home-to-join-acus-pioneering-research-program/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab brings Pfeifer home to join ACU’s pioneering research program</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>January 29, 2019</i></p>
-
-                      <li>
-                        <a href="https://ktxs.com/news/local/robison-excelsior-foundation-pledges-over-3-million-in-funding-for-acus-next-lab" target="_blank" style="color: rgb(123,164,221);">Robison Excelsior Foundation pledges over $3 million in funding for ACU's NEXT Lab</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 29, 2018</i></p>
-
-                     <li>
-                        <a href="http://acu.today/2018/10/16/next-lab-receives-3-2-million-from-robison-excelsior-foundation/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives $3.2 million from Robison Excelsior Foundation</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 16, 2018</i></p>
-                    
-                    <li>
-                        <a href="https://www.energy.gov/ne/articles/idaho-national-laboratory-awards-39-million-support-proposed-fast-spectrum-test-reactor" target="_blank" style="color: rgb(123,164,221);">Idaho National Laboratory awards $3.9 Million in support of proposed fast spectrum test reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Oct 5, 2018</i></p>
-                    <li>
-                        <a href="http://acu.today/2018/08/31/next-lab-receives-federal-funding-to-partner-with-idaho-national-lab-mit-yale-and-others-on-research-reactor/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives federal funding to partner with Idaho National Lab, MIT, Yale and others on research reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>August 31, 2018</i></p>
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/2018/06/26/dcoa-approves-300-000-r-d-dollars-acu-energy-project/736552002/" target="_blank" style="color: rgb(123,164,221);">DCOA approves $300,000 in R&D dollars for Abilene Christian nuclear energy project</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>June 26, 2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab focuses research on solving global problems</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/" target="_blank" style="color: rgb(123,164,221);">Rusty Towell: Innovative scholar, down-to-earth teacher</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <!-- <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 18, 2018</i></p> -->
-                    <li><a href="media_coverages" style="color: rgb(123,164,221);">more...</a></li>
-                </ul>
+        <div id="column1" class="column">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DmczVhGq8cU" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h4 style="color: white; font-size: 25px"><a href="https://www.realclearscience.com/video/2019/01/14/milking_the_thorium_cow.html" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Milking The Thorium Cow</a></h4>
+            
+            
                 <!--
                            <hr />
                            <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; NEXT UPDATES</h3>
@@ -269,17 +224,16 @@
                                <p style="opacity: 0.5; font-size: smaller"><i>July 2017</i></p>
                            </ul>
                   -->
-                <hr />
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; OUR CAMPUS</h3>
-                <a href="http://www.acu.edu" target="_blank"><img src="image/newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-            </aside>
+                
+            
         </div>
-        <div class="column">
+        <div id="column2" class="column">
+            
             <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-
+                
                 <h4 style="color: white; "><a href="https://www.knowablemagazine.org/article/technology/2019/nuclear-goes-retro-much-greener-outlook" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Nuclear goes retro — with a much greener outlook</a></h4>
                 <p style="color: GrayText; margin-left: 30px;"><i>
-Troels Schönfeldt can trace his path to becoming a nuclear energy entrepreneur back to 2009, when he and other young physicists at the Niels Bohr Institute in Copenhagen started getting together for an occasional “beer and nuclear” meetup...(Feb 22, 2019)</i></p>
+                Troels Schönfeldt can trace his path to becoming a nuclear energy entrepreneur back to 2009, when he and other young physicists at the Niels Bohr Institute in Copenhagen started getting together for an occasional “beer and nuclear” meetup...(Feb 22, 2019)</i></p>
 
                 <h4 style="color: white; "><a href="https://neup.inl.gov/SitePages/Home.aspx" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">The U.S. Department of Energy’s Office of Nuclear Energy..</a></h4>
                 <p style="color: GrayText; margin-left: 30px;"><i>..created Nuclear Energy University Program (NEUP) in 2009 to consolidate its university support under one program . . . (Oct 15, 2018)</i></p>
