@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VIDEOS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body style="overflow-x: hidden;">
+
+    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home"><img src="image/logo_newtag.png" height=85 width=200 /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav"></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home">HOME</a></li>
+                    <li class="active"><a href="videos">VIDEOS</a></li>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about">Mission</a></li>
+                            <li><a href="history">History</a></li>
+                            <li><a href="whyacu">Why ACU?</a></li>
+                            <li><a href="members">NEXT's Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="whynuclear">Why Nuclear?</a></li>
+                            <li><a href="about_reactor">About Reactor</a></li>
+                            <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="media_coverages">Media Coverages</a></li>
+                            <li><a href="relatedsites">Related Sites and Stories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact_us">CONTACT US</a></li>
+
+                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)) {
+                document.getElementById("navbar navbar-inverse").style.Top = "10";
+                //console.log(document.body.scrollTop);
+
+
+
+                //console.log(document.documentElement.scrollTop);
+            } else {
+                document.getElementById("navbar navbar-inverse").style.Top = "0";
+                //console.log("STOP");
+                //console.log(document.documentElement.scrollTop);
+            }
+        }
+        var lastScrollTop = 0;
+        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+            if (st > lastScrollTop) {
+                // downscroll code
+                console.log("TRUE");
+                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
+            } else {
+                // upscroll code
+                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
+            }
+            lastScrollTop = st;
+        }, false);
+    </script>
+
+
+    <style>
+
+
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: auto;
+            padding: 15px 25px;
+            font-weight: 600;
+            font-size: larger;
+            text-align: center;
+            color: black;
+            border: 1px solid transparent lightgray;
+            background-color: lightgray;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+            }
+
+
+
+
+            label:hover {
+                color: white;
+                background-color: #222;
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: white;
+            background-color: #222;
+            border: 1px solid #ddd;
+            border-top: 2px solid #222;
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2{
+            display: block;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        ul.sidenav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            width: auto;
+            background-color: rgb(225,225,225);
+            position: relative;
+            height: 100%;
+            overflow: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+            ul.sidenav li a {
+                display: block;
+                color: #000;
+                padding: 15px 16px;
+                text-decoration: none;
+            }
+
+                ul.sidenav li a.active {
+                    background-color: #222;
+                    color: white;
+                }
+
+                ul.sidenav li a:hover:not(.active) {
+                    background-color: #222;
+                    color: white;
+                }
+
+        div.content {
+            padding: 1px 16px;
+        }
+
+        #padding_title {
+            padding-left: 12%;
+            padding-right: 12%;
+        }
+
+        #REAL {
+            color: white;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .column {
+            float: left;
+            width: 78%;
+            padding: 0.5em;
+            padding-right: 13%;
+        }
+
+        .column1 {
+            float: left;
+            width: 22%;
+            padding: 0.5em;
+            padding-left: 13%;
+            padding-bottom: 6.5%;
+        }
+
+        #sideCOL {
+            margin-top: 10px;
+            padding: 1px 16px 16px;
+        }
+
+        .main_row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .main_row{
+            margin-right:200px;
+            margin-left: 200px;
+           text-align: center;
+            margin-top: 122px;
+        }
+
+        @media screen and (max-width: 740px) {
+            ul.sidenav li a {
+                text-align: center;
+                float: none;
+            }
+
+            ul.sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            #padding_title {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+          
+
+            .column1 {
+                width: 100%;
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            #quote {
+                display: none;
+            }
+
+            #quote1 {
+                display: none;
+            }
+
+            #sideCOL {
+                display: none;
+            }
+
+        }
+        @media screen and (max-width: 500px) {
+            label {
+                display: block;
+            }
+        }
+        .bottom-bar {
+            position: relative;
+            color: white;
+            text-align: center;
+            font-size: .8em;
+            text-transform: uppercase;
+            background: #000;
+            padding: 15px 0;
+        }
+        
+        #columnA {
+            float: left;
+            width: 70%;
+            height: 20%; /* Should be removed. Only for demonstration */
+        }
+                    
+        #columnB {
+            float: left;
+            width: 30%;
+            height: 50%; /* Should be removed. Only for demonstration */
+            font-size: 120%;
+        }
+        .row{
+            margin-bottom: 30px;
+            border-top: ridge;
+        }
+        
+        .video-responsive{
+            overflow: hidden;
+            padding-bottom: 70%;
+            padding-right: 20px;
+            position: relative;
+            height: 0;
+        }
+        .video-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+
+        .slides{
+            font-size: 130%;
+            font-weight: bold;
+        }
+        
+/*
+        .video-container {
+            align-content: center;
+            margin-left: 100px;
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 5%;
+            margin-top: 5%;
+            padding-top: 30px; height: 0; overflow: hidden;
+        }
+
+        
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 70%;
+        }
+*/
+
+
+    </style>
+
+    <div class="main_row">
+        <input id="tab1" type="radio" name="tabs" checked>
+        <label for="tab1">Members</label>
+
+<!--        <input id="tab2" type="radio" name="tabs">-->
+<!--        <label for="tab2">Students</label>-->
+
+        <section id="content1">
+         <h2>Thorium Energy Conference 2018</h2>
+                <!-- Video 1-->
+            <div class="row">
+                <div class="column" id ="columnA" >
+                    <div class="video-responsive">
+                        <iframe width="690px;" height="490px;" src="https://www.youtube.com/embed/GIbeYKGqt3g?start=19" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                 </div>
+        
+                <div class="column" id="columnB" >
+            
+                        <p class="description-text" >Advancing Thorium Fueled Molten Salt Reactor R&D in a University Laboratory by Rusty Towell, Abilene Christian University </p>
+                    <br />
+                        <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/advancing_thorium_fueled_molten_salt_reactor_r_d_in_a_university_laboratory_thec18_slides.pdf" target="_blank">SLIDES</a>
+                    </p>
+                </div>
+            </div>
+            
+              <!-- Video two -->  
+            <div class="row">
+                <div class="column" id ="columnA" >
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zBd2GjO7nfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                 </div>
+        
+                <div class="column" id="columnB" >
+            
+                        <p class="description-text" >NEXT Molten Salt Test Loop by Timothy Head, Abilene Christian University</p>
+                    <br />
+                        <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/next_molten_salt_loop_thec18_slides.pdf" target="_blank">SLIDES</a></p>
+                </div>
+            </div>
+            
+             <!-- Video Three -->  
+            <div class="row">
+                <div class="column" id ="columnA" >
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sG6aGSEPiAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                 </div>
+        
+                <div class="column" id="columnB" >
+            
+                        <p class="description-text" >Chemical Analysis of Molten Salts Before and During Use in A Test Loop by Flame Atomic Absorption by Kim Pamplin, Abilene Christian University</p>
+                    <br />
+                        <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/chemical_analysis_of_molten_salts_before_and_during_use_in_a_test_loop_thec18_slides.pdf" target="_blank">SLIDES</a></p>
+                </div>
+            </div>
+            
+                    <!-- TED TALS -->
+            
+            <div class="tedtalks">
+                <h2 style="margin-top: 50px; border-top: ridge; padding-top: 10px; padding-bottom: 4px;">Ted Talks</h2>
+                <!--  Ted one -->
+                <div class="row">
+                <div class="column" id ="columnA" >
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3pa35s6HKa8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                 </div>
+                <div class="column" id="columnB" >
+                        <p class="description-text" >Dr. Rusty Towell talks about how Moldten Salt Reactors could be used to produce clean energy as well as produce medical isotopes for the treatment of cancer.</p>
+                </div>
+            </div>
+            
+                <!--  Ted two-->
+            <div class="row">
+                <div class="column" id ="columnA" >
+                    <div class="video-responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jDqCpfVwdP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                 </div>
+        
+                <div class="column" id="columnB" >
+            
+                        <p class="description-text" >Dr. Rusty Towell talks about how clean energy could be used to impprove people's lives around the world, more especially in developing countries.</p>
+                  
+                </div>
+            </div>
+
+                
+            </div>
+
+        </section>
+
+
+            <!--  Student Section      -->
+<!--
+        <section id="content2">
+
+                <h2>Student Presentations</h2>
+
+               
+                  <div class="video-container">
+                    <center><iframe  width="150" height="auto" src="https://www.youtube.com/embed/sG6aGSEPiAI" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+
+                </div>
+         </section>
+-->
+
+    </div>
+    <div style="margin-bottom: 20px;"></div>
+    <div class="bottom-bar">
+        &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+    </div>
+
+</body>
+</html>
