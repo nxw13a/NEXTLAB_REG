@@ -27,7 +27,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="home">HOME</a></li>
                     <li><a href="videos">VIDEOS</a></li>
-                    <li class="active">
+                    <li class="">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="about">Mission</a></li>
@@ -44,11 +44,11 @@
                             <li><a href="reactor_benefits">Reactor's Benefits</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="media_coverages">Media Coverages</a></li>
-                            <li><a href="relatedsites">Related Sites</a></li>
+                            <li><a href="relatedsites">Related Sites and Stories</a></li>
                         </ul>
                     </li>
                     <li><a href="contact_us">CONTACT US</a></li>
@@ -71,8 +71,7 @@
         }
     </script>
 
-
-    <style>
+<style>
         .bottom-bar {
             position: relative;
             color: white;
@@ -83,56 +82,50 @@
             padding: 15px 0;
         }
 
-        * {
-            box-sizing: border-box;
-        }
+    *{
+        box-sizing: border-box;
+    }
+    ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225,225,225);
+        position: relative;
+        height: 100%;
+        overflow: auto;
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
-        ul.sidenav {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: rgb(225,225,225);
-            position: relative;
-            height: 100%;
-            overflow: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
+  ul.sidenav li a {
+      display: block;
+      color: #000;
+      padding: 15px 16px;
+      text-decoration: none;
+  }
 
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 15px 16px;
-                text-decoration: none;
-            }
+  ul.sidenav li a.active {
+      background-color: #222;
+      color: white;
+  }
 
-                ul.sidenav li a.active {
-                    background-color: #222;
-                    color: white;
-                }
+  ul.sidenav li a:hover:not(.active) {
+      background-color: #222;
+      color: white;
+  }
 
-                ul.sidenav li a:hover:not(.active) {
-                    background-color: #222;
-                    color: white;
-                }
+  div.content {
 
-        div.content {
-            padding: 1px 16px;
-        }
+      padding: 1px 16px;
 
+  }
         #padding_title {
             padding-left: 12%;
             padding-right: 12%;
         }
-        
-        #padding_title {
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-
         #REAL {
-            
+
             color: white;
             text-align: center;
             padding: 5px;
@@ -140,66 +133,82 @@
             background-color: #222;
             border-radius: 10px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            
         }
         
-        #column1 {
-        
-            float: left;
-            width: 50%;
-            padding: 0.5em;
-            padding-right: 13%;
-            margin-right: 20px;
+        .column1{
+      float: left;
+      width: 45%;
+      padding: 0.5em;
+      padding-left: 13%;
+
+  }
+  .column{
+      float: left;
+      width: 55%;
+     padding: 0.5em;
+     padding-right: 13%;
+
+  }
+  
+  #sideCOL{
+      margin-top: 0px;
+      padding: 1px 16px 16px;
+  }
+  .row1:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+          @media screen and (max-width: 740px) {
+              ul.sidenav li a {
+                  text-align: center;
+                  float: none;
+              }
+              ul.sidenav {
+                  width: 100%;
+                  height: auto;
+                  position: relative;
+              }
+                #padding_title {
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+                .column {
+                    width: 100%;
+                    padding-left: 4%;
+                    padding-right: 4%;
+                }
+                .column1 {
+                    width: 100%;
+                    padding-left: 4%;
+                    padding-right: 4%;
+                }
+              #quote{
+                  display: none;
+              }
+              #quote1{
+                  display: none;
+              }
+              #sideCOL{
+                  display: none;
+              }
+          }
+        .video1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95%;
+            height: 95%;
+            margin-left: 2.5%;
+            margin-top: 1em;
         }
 
-        #column2 {
-        
-            float: left;
-            width: 48%;
-        
-        }
-        
-
-        #sideCOL {
-            margin-top: 10px;
-            padding: 1px 16px 16px;
-        }
-        
-        .row1{
-            margin: 0% 4% 0% 4%;
-            padding-left: 6%;
-            padding-right: 6%;
-        }
-
-        .row1:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        
-        @media screen and (max-width: 740px) {
-            ul.sidenav li a {
-                text-align: center;
-                float: none;
-            }
-
-            ul.sidenav {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            #quote {
-                display: none;
-            }
-
-            #quote1 {
-                display: none;
-            }
-
-            #sideCOL {
-                display: none;
-            }
+        .containerVid1 {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
         }
     </style>
 
@@ -207,30 +216,39 @@
     <div id="padding_title">
         <h1 id="REAL">Related Sites and Stories</h1>
     </div>
-    <div class="row1">
-        <div id="column1" class="column">
+  <div class="row1">
+  <div class="column1">
+    <div class="sidenav">
+    <div class="containerVid1">
+        <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/DmczVhGq8cU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+    <h4 style="color: white; font-size: 25px; padding-left: 2%;"><a href="https://www.realclearscience.com/video/2019/01/14/milking_the_thorium_cow.html" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Milking The Thorium Cow</a></h4>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DmczVhGq8cU" frameborder="2" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
-            <h4 style="color: white; font-size: 25px"><a href="https://www.realclearscience.com/video/2019/01/14/milking_the_thorium_cow.html" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Milking The Thorium Cow</a></h4>
-            
-            
-                <!--
-                           <hr />
-                           <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; NEXT UPDATES</h3>
-                            <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
-                               <li><a href="MSTL" style="color: rgb(123,164,221);" >Status of Molten Salt Test Loop (MSTL) Assembly and Testing</a></li>
-                               <p style="opacity: 0.5; font-size: smaller"><i>Sept 13,2017</i></p>
-                               <li><a href="Characteristic" style="color: rgb(123,164,221);">Characterization of Salt Mixtures</a></li>
-                               <p style="opacity: 0.5; font-size: smaller"><i>July 2017</i></p>
-                           </ul>
-                  -->
+
+    <div class="containerVid1">
+        <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.vibby.com/embed/vib?vib=71sP6KPId" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <h4 style="color: white; font-size: 25px; padding-left: 2%;"><a href="https://www.vibby.com/watch?vib=71sP6KPId" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">U.S. Secretary of Energy Rick Perry 2019 IFNEC Opening Remarks</a></h4>
+  </div>
+  
+  </div>
+  <div class="column">
+  <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+    <h4 style="color: white; "><a href="https://acusports.com/news/2019/10/2/football-engineering-marvel-de-hill-tackles-science-math-and-quarterbacks.aspx?path=football" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Engineering Marvel: DE Hill tackles science, math and quarterbacks</a></h4>
+                <p style="color: GrayText; margin-left: 30px;"><i>
+                ABILENE – Think, envision, write, and plan are the steps employed by Kameron Hill to achieve success... October 2, 2019</i></p>
                 
-            
-        </div>
-        <div id="column2" class="column">
-            
-            <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+                <h4 style="color: white; "><a href="https://nedho.org/" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Nuclear Engineering Department Heads Organization (NEDHO)</a></h4>
+                <p style="color: GrayText; margin-left: 30px;"><i>
+                Academic programs emphasizing nuclear and radiological sciences, engineering and technology</i></p>
+                
+                <h4 style="color: white; "><a href="http://www.ans.org/" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">American Nuclear Society (ANS)</a></h4>
+                <p style="color: GrayText; margin-left: 30px;"><i>
+                The American Nuclear Society (ANS) is a not-for-profit, international, scientific and educational organization. It was established...</i></p>
+                
+                <h4 style="color: white; "><a href="https://www.nei.org/home" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Nuclear Energy Institute (NEI)</a></h4>
+                <p style="color: GrayText; margin-left: 30px;"><i>
+                The Nuclear Energy Institute is the policy organization of the nuclear technologies industry, based in Washington, D.C.</i></p>
                 
                 <h4 style="color: white; "><a href="https://www.knowablemagazine.org/article/technology/2019/nuclear-goes-retro-much-greener-outlook" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Nuclear goes retro — with a much greener outlook</a></h4>
                 <p style="color: GrayText; margin-left: 30px;"><i>
@@ -244,10 +262,6 @@
 
                 <h4 style="color: white; "><a href="https://ec.europa.eu/jrc/en/news/prostate-cancer-alpha-therapy-shows-impressive-results" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Hope for metastatic prostate cancer patients: targeted alpha therapy shows impressive results</a></h4>
                 <p style="color: GrayText; margin-left: 30px;"><i>Nearly three years of research have brought about remarkable results for the majority of 80 patients subjected to targeted alpha therapy of metastatic prostate cancer . . . (Dec 21, 2016)</i></p>
-
-                <h4 style="color: white; "><a href="http://www.ans.org/" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">The American Nuclear Society (ANS)</a> </h4>
-                <p style="color: GrayText; margin-left: 30px;"><i>is a not-for-profit, international, scientific and educational organization. It was established by a group of individuals who recognized the need to unify the professional activities within the diverse fields of nuclear science and technology.
-                </i></p>
 
                 <h4 style="color: white; "><a href="http://niffte.org/#/home" style="color: rgb(123,164,221); font-weight: bold;" target="_blank">Neutron Induced Fission Fragment Tracking Experiment (NIFFTE)</a> </h4>
                 <p style="color: GrayText; margin-left: 30px;">
@@ -267,9 +281,9 @@
                     <i>
                         Molten salt reactors (MSRs) use molten fluoride salts as primary coolant, at low pressure. This itself is not a radical departure when the fuel is solid and fixed. But extending the concept to dissolving the fissile and fertile fuel in the salt certainly represents a leap in lateral thinking relative to nearly every reactor operated so far. </i>
                 </p>
-            </div>
-        </div>
-    </div>
+  </div>
+  </div>
+  </div>
     <div style="margin-bottom: 20px;"></div>
     <div class="bottom-bar">
         &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
@@ -277,3 +291,5 @@
 
 </body>
 </html>
+
+    

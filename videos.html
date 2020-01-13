@@ -93,18 +93,16 @@
 
     <style>
 
-
-
         section {
             display: none;
             padding: 20px 0 0;
             border-top: 1px solid;
         }
-
+        
         input {
             display: none;
         }
-
+        
         label {
             display: inline-block;
             width: auto;
@@ -117,20 +115,17 @@
             background-color: lightgray;
         }
 
-            label:before {
-                font-family: fontawesome;
-                font-weight: normal;
-            }
+        label:before {
+            font-family: fontawesome;
+            font-weight: normal;
+        }
 
-
-
-
-            label:hover {
-                color: white;
-                background-color: #222;
-                cursor: pointer;
-            }
-
+        label:hover {
+            color: white;
+            background-color: #222;
+            cursor: pointer;
+        }
+        
         input:checked + label {
             color: white;
             background-color: #222;
@@ -141,7 +136,9 @@
         #tab1:checked ~ #content1,
         #tab2:checked ~ #content2{
             display: block;
+            
         }
+        
         * {
             box-sizing: border-box;
         }
@@ -158,26 +155,22 @@
             overflow: auto;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
+        
+        ul.sidenav li a {
+          display: block;
+          color: #000;
+          padding: 15px 16px;
+          text-decoration: none;
+        }
 
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 15px 16px;
-                text-decoration: none;
-            }
+        ul.sidenav li a.active {
+          background-color: #222;
+          color: white;
+        }
 
-                ul.sidenav li a.active {
-                    background-color: #222;
-                    color: white;
-                }
-
-                ul.sidenav li a:hover:not(.active) {
-                    background-color: #222;
-                    color: white;
-                }
-
-        div.content {
-            padding: 1px 16px;
+        ul.sidenav li a:hover:not(.active) {
+            background-color: #222;
+            color: white;
         }
 
         #padding_title {
@@ -195,21 +188,6 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
-        .column {
-            float: left;
-            width: 78%;
-            padding: 0.5em;
-            padding-right: 13%;
-        }
-
-        .column1 {
-            float: left;
-            width: 22%;
-            padding: 0.5em;
-            padding-left: 13%;
-            padding-bottom: 6.5%;
-        }
-
         #sideCOL {
             margin-top: 10px;
             padding: 1px 16px 16px;
@@ -222,8 +200,6 @@
         }
         
         .main_row{
-            margin-right:200px;
-            margin-left: 200px;
            text-align: center;
             margin-top: 122px;
         }
@@ -245,14 +221,6 @@
                 padding-right: 2%;
             }
 
-          
-
-            .column1 {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
             #quote {
                 display: none;
             }
@@ -266,11 +234,26 @@
             }
 
         }
-        @media screen and (max-width: 500px) {
+        
+        @media screen and (max-width: 500px){
             label {
                 display: block;
             }
+             .column {
+                padding-right: 3%;
+                padding-top: 3%;
+                text-align: center;
+            }
+
+            .column1 {
+                float: left;
+                width: 75%;
+                padding: 0.5em;
+                padding-left: 3%;
+                padding-bottom: 3%;
+            }   
         }
+        
         .bottom-bar {
             position: relative;
             color: white;
@@ -281,18 +264,6 @@
             padding: 15px 0;
         }
         
-        #columnA {
-            float: left;
-            width: 70%;
-            height: 20%; /* Should be removed. Only for demonstration */
-        }
-                    
-        #columnB {
-            float: left;
-            width: 30%;
-            height: 50%; /* Should be removed. Only for demonstration */
-            font-size: 120%;
-        }
         .row{
             margin-bottom: 30px;
             border-top: ridge;
@@ -317,31 +288,55 @@
             font-size: 130%;
             font-weight: bold;
         }
-        
-/*
-        .video-container {
-            align-content: center;
-            margin-left: 100px;
-            position: relative;
-            padding-bottom: 56.25%;
-            margin-bottom: 5%;
-            margin-top: 5%;
-            padding-top: 30px; height: 0; overflow: hidden;
+
+        .video1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 95%;
+                height: 95%;
+                margin-left: 2.5%;
+                margin-top: 1em;
         }
 
+        .containerVid1 {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-bottom: 56.25%;
+        }
+        .slides{
+                font-size: 130%;
+                font-weight: bold;
+        }
         
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .row1:after {
+            content: "";
+            display: table;
+            clear: both;
+            border-top: ridge;
+        }
+        
+        .row1 {
+            border-top: ridge;
+        }
+ 
+        
+        .column {
+            padding-right: 3%;
+            padding-top: 3%;
+            text-align: center;
+            padding-right: 13%;
+        }
+
+        .column1 {
+            float: left;
             width: 70%;
-            height: 70%;
+            padding: 0.5em;
+            padding-left: 13%;
+            padding-bottom: 3%;
         }
-*/
-
-
+        
     </style>
 
     <div class="main_row">
@@ -354,53 +349,74 @@
         <section id="content1">
          <h2>Thorium Energy Conference 2018</h2>
                 <!-- Video 1-->
-            <div class="row">
-                <div class="column" id ="columnA" >
-                    <div class="video-responsive">
-                        <iframe width="690px;" height="490px;" src="https://www.youtube.com/embed/GIbeYKGqt3g?start=19" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                 </div>
-        
-                <div class="column" id="columnB" >
-            
-                        <p class="description-text" >Advancing Thorium Fueled Molten Salt Reactor R&D in a University Laboratory by Rusty Towell, Abilene Christian University </p>
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/GIbeYKGqt3g?start=19" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                         <p class="description-text" >Advancing Thorium Fueled Molten Salt Reactor R&D in a University Laboratory by Rusty Towell, Abilene Christian University </p>
+                    
                     <br />
+                    
                         <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/advancing_thorium_fueled_molten_salt_reactor_r_d_in_a_university_laboratory_thec18_slides.pdf" target="_blank">SLIDES</a>
                     </p>
-                </div>
-            </div>
+
+
+                      </div>
+                  </div>
+              </div>
             
 <!--               Video two   -->
-            <div class="row">
-                <div class="column" id ="columnA" >
-                    <div class="video-responsive">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zBd2GjO7nfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                 </div>
-        
-                <div class="column" id="columnB" >
-            
-                        <p class="description-text" >NEXT Molten Salt Test Loop by Timothy Head, Abilene Christian University</p>
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/zBd2GjO7nfM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                         <p class="description-text" >NEXT Molten Salt Test Loop by Timothy Head, Abilene Christian University</p>
+                    
                     <br />
+                    
                         <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/next_molten_salt_loop_thec18_slides.pdf" target="_blank">SLIDES</a></p>
-                </div>
-            </div>
+
+                      </div>
+                  </div>
+              </div>
             
              <!-- Video Three -->  
-            <div class="row">
-                <div class="column" id ="columnA" >
-                    <div class="video-responsive">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/sG6aGSEPiAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                 </div>
-        
-                <div class="column" id="columnB" >
             
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/sG6aGSEPiAI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
                         <p class="description-text" >Chemical Analysis of Molten Salts Before and During Use in A Test Loop by Flame Atomic Absorption by Kim Pamplin, Abilene Christian University</p>
                     <br />
                         <p class="slides" >Link to slides: <a href="http://www.thoriumenergyworld.com/uploads/6/9/8/7/69878937/chemical_analysis_of_molten_salts_before_and_during_use_in_a_test_loop_thec18_slides.pdf" target="_blank">SLIDES</a></p>
-                </div>
-            </div>
+                          
+                      </div>
+                  </div>
+              </div>
             
                     <!-- TED TALS -->
             
@@ -408,33 +424,44 @@
                 <h2 style="margin-top: 50px; border-top: ridge; padding-top: 10px; padding-bottom: 4px;">Ted Talks</h2>
                 <!--  Ted one -->
 <!--
-                <div class="row">
-                    <div class="column" id ="columnA" >
-                        <div class="video-responsive">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3pa35s6HKa8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                     </div>
-                    <div class="column" id="columnB" >
-                            <p class="description-text" >Dr. Rusty Towell talks about how Moldten Salt Reactors could be used to produce clean energy as well as produce medical isotopes for the treatment of cancer.</p>
-                    </div>
-                </div>
+                    <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/3pa35s6HKa8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                        <p class="description-text" >Dr. Rusty Towell talks about how Moldten Salt Reactors could be used to produce clean energy as well as produce medical isotopes for the treatment of cancer.</p>
+                          
+                      </div>
+                  </div>
+              </div>
 -->
             
                 <!--  Ted two-->
-            <div class="row">
-                <div class="column" id ="columnA" >
-                    <div class="video-responsive">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jDqCpfVwdP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                 </div>
-        
-                <div class="column" id="columnB" >
-            
-                        <p class="description-text" >Dr. Rusty Towell talks about how clean energy could be used to impprove people's lives around the world, more especially in developing countries.</p>
-                  
-                </div>
-            </div>
+                
+                <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/jDqCpfVwdP4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
 
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                        <p class="description-text" >Dr. Rusty Towell talks about how clean energy could be used to impprove people's lives around the world, more especially in developing countries.</p>
+                          
+                      </div>
+                  </div>
+              </div>
                 
             </div>
 
@@ -447,50 +474,114 @@
 
                     <!-- student video 1 -->  
             <div class="row">
-                <div class="column" id ="columnA" >
+                <div class="column" >
                     <div class="video-responsive">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/YF3dmE3nz78" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                  </div>
         
-                <div class="column" id="columnB" >
+                <div class="column" >
                         <br />
             
                         <p class="description-text" >NEXT Lab Student Researcher Beau Bunnell talks about Moltel Salt Test Loop temperature measurements.</p>
             
                 </div>
+                
+                <!--                start here-->
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/YF3dmE3nz78" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                        <p class="description-text" >NEXT Lab Student Researcher Beau Bunnell talks about Moltel Salt Test Loop temperature measurements.</p>
+
+                      </div>
+                  </div>
+              </div>
+                
+<!--                end here-->
             </div>
             
                     <!-- student video 2 -->  
             <div class="row">
-                <div class="column" id ="columnA" >
+                <div class="column" >
                     <div class="video-responsive">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/inocT72VKbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                  </div>
         
-                <div class="column" id="columnB" >
+                <div class="column">
                         <br />
             
                         <p class="description-text" >NEXT Lab Student Researcher Micheal Rangers talks about Moltel Salt Test Loop Auxilary Systems.</p>
             
                 </div>
+                
+                <!--                start here-->
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/inocT72VKbc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                        <p class="description-text" >NEXT Lab Student Researcher Micheal Rangers talks about Moltel Salt Test Loop Auxilary Systems.</p>
+
+
+                      </div>
+                  </div>
+              </div>
+                
+<!--                end here-->
             </div>
             
                     <!-- student video 3 -->  
             <div class="row">
-                <div class="column" id ="columnA" >
+                <div class="column">
                     <div class="video-responsive">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/GuaUx7Noro0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                  </div>
         
-                <div class="column" id="columnB" >
+                <div class="column">
                         <br />
             
                         <p class="description-text" >NEXT Lab Student Researcher Sam Mulder talks about Ultrasonic Velocity and Attenuation Measurements for NEXT.</p>
             
                 </div>
+                
+                <!--                start here-->
+                  <div class="row1">
+                      <div class="column1">
+                        <div class="sidenav">
+                        <div class="containerVid1">
+                            <iframe class="video1" style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" src="https://www.youtube.com/embed/GuaUx7Noro0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            </div>
+
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="content">
+
+                        <p class="description-text" >NEXT Lab Student Researcher Sam Mulder talks about Ultrasonic Velocity and Attenuation Measurements for NEXT.</p>
+
+                      </div>
+                  </div>
+              </div>
+                
+<!--                end here-->
             </div>
          </section>
 
