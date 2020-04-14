@@ -1,399 +1,613 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>MEMBERS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-<body style="overflow-x: hidden;">
-
-    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="home"><img src="image/logo_newtag.png" height=85 width=200 /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav"></ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home">HOME</a></li>
-                    <li><a href="videos">VIDEOS</a></li>
-                    <li class="active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about">Mission</a></li>
-                            <li><a href="history">History</a></li>
-                            <li><a href="whyacu">Why ACU?</a></li>
-                            <li><a href="members">NEXT's Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="whynuclear">Why Nuclear?</a></li>
-                            <li><a href="about_reactor">About Reactor</a></li>
-                            <li><a href="reactor_benefits">Reactor's Benefits</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="media_coverages">Media Coverages</a></li>
-                            <li><a href="relatedsites">Related Sites and Stories</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact_us">CONTACT US</a></li>
-
-                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
-                </ul>
-            </div>
+  </head>
+  <body style="overflow-x: hidden;">
+    <nav
+      class="navbar navbar-inverse"
+      id="navbar navbar-inverse"
+      style="
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.2s;
+        z-index: 1;
+        border-radius: 0;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home"
+            ><img src="image/logo_newtag.png" height="85" width="200"
+          /></a>
         </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">HOME</a></li>
+            <li><a href="videos">VIDEOS</a></li>
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ABOUT<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="about">Mission</a></li>
+                <li><a href="history">History</a></li>
+                <li><a href="whyacu">Why ACU?</a></li>
+                <li><a href="members">NEXT's Team</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >RESEARCH<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="whynuclear">Why Nuclear?</a></li>
+                <li><a href="about_reactor">About Reactor</a></li>
+                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >NEWS<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="media_coverages">Media Coverages</a></li>
+                <li><a href="relatedsites">Related Sites and Stories</a></li>
+              </ul>
+            </li>
+            <li><a href="contact_us">CONTACT US</a></li>
+
+            <li>
+              <a
+                href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688"
+                target="_blank"
+                >DONATE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)) {
-                document.getElementById("navbar navbar-inverse").style.Top = "10";
-                //console.log(document.body.scrollTop);
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 15 ||
+          document.documentElement.scrollTop > 15
+        ) {
+          document.getElementById("navbar navbar-inverse").style.Top = "10";
+          //console.log(document.body.scrollTop);
 
-
-
-                //console.log(document.documentElement.scrollTop);
-            } else {
-                document.getElementById("navbar navbar-inverse").style.Top = "0";
-                //console.log("STOP");
-                //console.log(document.documentElement.scrollTop);
-            }
+          //console.log(document.documentElement.scrollTop);
+        } else {
+          document.getElementById("navbar navbar-inverse").style.Top = "0";
+          //console.log("STOP");
+          //console.log(document.documentElement.scrollTop);
         }
-        var lastScrollTop = 0;
-        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop) {
-                // downscroll code
-                console.log("TRUE");
-                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
-            } else {
-                // upscroll code
-                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
-            }
-            lastScrollTop = st;
-        }, false);
+      }
+      var lastScrollTop = 0;
+      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+      element.addEventListener(
+        "scroll",
+        function () {
+          // or window.addEventListener("scroll"....
+          var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScrollTop) {
+            // downscroll code
+            console.log("TRUE");
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "20px";
+          } else {
+            // upscroll code
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "0px";
+          }
+          lastScrollTop = st;
+        },
+        false
+      );
     </script>
 
-
     <style>
+      section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid;
+      }
 
-        section {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid;
-        }
+      input {
+        display: none;
+      }
 
-        input {
-            display: none;
-        }
+      label {
+        display: inline-block;
+        width: auto;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: larger;
+        text-align: center;
+        color: black;
+        border: 1px solid transparent lightgray;
+        background-color: lightgray;
+      }
 
-        label {
-            display: inline-block;
-            width: auto;
-            padding: 15px 25px;
-            font-weight: 600;
-            font-size: larger;
-            text-align: center;
-            color: black;
-            border: 1px solid transparent lightgray;
-            background-color: lightgray;
-        }
+      label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+      }
 
-            label:before {
-                font-family: fontawesome;
-                font-weight: normal;
-            }
+      label:hover {
+        color: white;
+        background-color: #222;
+        cursor: pointer;
+      }
 
+      input:checked + label {
+        color: white;
+        background-color: #222;
+        border: 1px solid #ddd;
+        border-top: 2px solid #222;
+      }
 
+      #tab1:checked ~ #content1,
+      #tab2:checked ~ #content2,
+      #tab3:checked ~ #content3,
+      #tab4:checked ~ #content4,
+      #tab5:checked ~ #content5 {
+        display: block;
+      }
+      * {
+        box-sizing: border-box;
+      }
 
+      ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225, 225, 225);
+        position: relative;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
 
-            label:hover {
-                color: white;
-                background-color: #222;
-                cursor: pointer;
-            }
+      ul.sidenav li a {
+        display: block;
+        color: #000;
+        padding: 15px 16px;
+        text-decoration: none;
+      }
 
-        input:checked + label {
-            color: white;
-            background-color: #222;
-            border: 1px solid #ddd;
-            border-top: 2px solid #222;
-        }
+      ul.sidenav li a.active {
+        background-color: #222;
+        color: white;
+      }
 
-        #tab1:checked ~ #content1,
-        #tab2:checked ~ #content2, 
-        #tab3:checked ~ #content3,
-        #tab4:checked ~ #content4,
-        #tab5:checked ~ #content5{
-            display: block;
-        }
-        * {
-            box-sizing: border-box;
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #222;
+        color: white;
+      }
+
+      div.content {
+        padding: 1px 16px;
+      }
+
+      #padding_title {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      #REAL {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .column {
+        float: left;
+        width: 78%;
+        padding: 0.5em;
+        padding-right: 13%;
+      }
+
+      .column1 {
+        float: left;
+        width: 22%;
+        padding: 0.5em;
+        padding-left: 13%;
+        padding-bottom: 6.5%;
+      }
+
+      #sideCOL {
+        margin-top: 10px;
+        padding: 1px 16px 16px;
+      }
+
+      .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 740px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
         }
 
         ul.sidenav {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: rgb(225,225,225);
-            position: relative;
-            height: 100%;
-            overflow: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 15px 16px;
-                text-decoration: none;
-            }
-
-                ul.sidenav li a.active {
-                    background-color: #222;
-                    color: white;
-                }
-
-                ul.sidenav li a:hover:not(.active) {
-                    background-color: #222;
-                    color: white;
-                }
-
-        div.content {
-            padding: 1px 16px;
+          width: 100%;
+          height: auto;
+          position: relative;
         }
 
         #padding_title {
-            padding-left: 12%;
-            padding-right: 12%;
-        }
-
-        #REAL {
-            color: white;
-            text-align: center;
-            padding: 5px;
-            width: 100%;
-            background-color: #222;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          padding-left: 2%;
+          padding-right: 2%;
         }
 
         .column {
-            float: left;
-            width: 78%;
-            padding: 0.5em;
-            padding-right: 13%;
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
         }
 
         .column1 {
-            float: left;
-            width: 22%;
-            padding: 0.5em;
-            padding-left: 13%;
-            padding-bottom: 6.5%;
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        #quote {
+          display: none;
+        }
+
+        #quote1 {
+          display: none;
         }
 
         #sideCOL {
-            margin-top: 10px;
-            padding: 1px 16px 16px;
+          display: none;
         }
-
-        .row1:after {
-            content: "";
-            display: table;
-            clear: both;
+      }
+      @media screen and (max-width: 500px) {
+        label {
+          display: block;
         }
-
-        @media screen and (max-width: 740px) {
-            ul.sidenav li a {
-                text-align: center;
-                float: none;
-            }
-
-            ul.sidenav {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            #padding_title {
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-
-            .column {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .column1 {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            #quote {
-                display: none;
-            }
-
-            #quote1 {
-                display: none;
-            }
-
-            #sideCOL {
-                display: none;
-            }
-
-        }
-        @media screen and (max-width: 500px) {
-            label {
-                display: block;
-            }
-        }
-        .bottom-bar {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
-        }
+      }
+      .bottom-bar {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background: #000;
+        padding: 15px 0;
+      }
     </style>
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-        <h1 id="REAL">NEXT's Team</h1>
+      <h1 id="REAL">NEXT's Team</h1>
     </div>
     <div class="row1">
-        <div class="column1">
-            <ul class="sidenav">
-                <li><a href="about">Mission</a></li>
-                <li><a  href="history">History</a></li>
-                <li><a href="whyacu">Why ACU?</a></li>
-                <li><a class="active" href="members">NEXT's Team</a></li>
-                <!--<li><a href="#contact">Student</a></li>-->
-                <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
-            </ul>
-            
-        </div>
-        <div class="column">
-            <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
+      <div class="column1">
+        <ul class="sidenav">
+          <li><a href="about">Mission</a></li>
+          <li><a href="history">History</a></li>
+          <li><a href="whyacu">Why ACU?</a></li>
+          <li><a class="active" href="members">NEXT's Team</a></li>
+          <!--<li><a href="#contact">Student</a></li>-->
+          <li>
+            <i
+              id="quote"
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(98, 99, 102);
+                text-align: center;
+                margin-top: 5px;
+              "
+              >"Finding global solutions to the world’s most critical needs"
+            </i>
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <div
+          class="content"
+          style="
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <div style="margin-top: 10px;"></div>
 
-                <div style="margin-top: 10px;">
-                </div>
+          <input id="tab1" type="radio" name="tabs" checked />
+          <label for="tab1">Members</label>
 
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1">Members</label>
+          <input id="tab2" type="radio" name="tabs" />
+          <label for="tab2">Students</label>
 
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2">Students</label>
+          <input id="tab3" type="radio" name="tabs" />
+          <label for="tab3">Advisory Board</label>
 
-                <input id="tab3" type="radio" name="tabs">
-                <label for="tab3">Advisory Board</label>
+          <input id="tab4" type="radio" name="tabs" />
+          <label for="tab4">Lab Oversight Committee</label>
 
-				<input id="tab4" type="radio" name="tabs">
-                <label for="tab4">Lab Oversight Committee</label>
+          <input id="tab5" type="radio" name="tabs" />
+          <label for="tab5">Past Members</label>
 
-                <input id="tab5" type="radio" name="tabs">
-                <label for="tab5">Past Members</label>
+          <section id="content1">
+            <a
+              href="rusty_towell"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Rusty Towell</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i
+                >Director of NEXT Lab, Professor, Department of Engineering and
+                Physics.</i
+              >
+            </p>
+            <hr style="border-color: black;" />
 
-    
+            <a
+              href="michael_arrasmith"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Michael Arrasmith</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Research Scientist</i>
+            </p>
+            <hr style="border-color: black;" />
 
+            <a
+              href="robert_brown"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Robert Brown</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Assistant Professor, Department of Engineering and Physics</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                <section id="content1">
-                    <a href="rusty_towell" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Rusty Towell</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Director of NEXT Lab, Professor, Department of Engineering and Physics.</i></p>
-                    <hr style="border-color: black;" />
-                    
-                      <a href="michael_arrasmith" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Michael Arrasmith</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Research Scientist</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="robert_brown" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Robert Brown</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Assistant Professor, Department of Engineering and Physics</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="alli_bulkley" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Alli Mae Bulkley</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Research Scientist</i></p>
-                    <hr style="border-color: black;" />
+            <a
+              href="alli_bulkley"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Alli Mae Bulkley</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Research Scientist</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="jess_dowdy" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Jess Dowdy</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Department Chair, Engineering and Physics Professor, Department of Engineering and Physics</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="tim_head" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Tim Head</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor, Department of Engineering and Physics</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="lori_houghtalen" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Lori Houghtalen</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Assistant Professor of Engineering and Physics</i></p>
-                    <hr style="border-color: black;" />
+            <a
+              href="jess_dowdy"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Jess Dowdy</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i
+                >Department Chair, Engineering and Physics Professor, Department
+                of Engineering and Physics</i
+              >
+            </p>
+            <hr style="border-color: black;" />
 
-                     <a href="tim_kennedy" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Timothy Kennedy, P.E.</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Assistant Professor, Department of Engineering and Physics</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="diego_fernando" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Diego Fernando Zometa Paniagua</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Research Scientist</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="tim_head"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Tim Head</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Professor, Department of Engineering and Physics</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="kim_pamplin" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Kim Pamplin</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor of Department of Chemistry and Biochemistry.</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="lori_houghtalen"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Lori Houghtalen</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Assistant Professor of Engineering and Physics</i>
+            </p>
+            <hr style="border-color: black;" />
 
+            <a
+              href="tim_kennedy"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Timothy Kennedy, P.E.</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Assistant Professor, Department of Engineering and Physics</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                      <a style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Dylan Pfeifer</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Senior Engineer</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="diego_fernando"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Diego Fernando Zometa Paniagua</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Research Scientist</i>
+            </p>
+            <hr style="border-color: black;" />
 
+            <a
+              href="kim_pamplin"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Kim Pamplin</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i
+                >Senior Chemist, NEXT Lab, and Professor, Department of
+                Chemistry and Biochemistry</i
+              >
+            </p>
+            <hr style="border-color: black;" />
 
-                     <a href="aaron_robison" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Aaron Robison</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Professor of Department of Chemistry and Biochemistry.</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Dylan Pfeifer</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Senior Engineer</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                     <a href="ray_smith" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Ray Smith</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Co-Director and Instructor, Department of Engineering and Physics</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="aaron_robison"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Aaron Robison</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Professor of Department of Chemistry and Biochemistry.</i>
+            </p>
+            <hr style="border-color: black;" />
 
+            <a
+              href="ray_smith"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Ray Smith</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i
+                >Co-Director and Instructor, Department of Engineering and
+                Physics</i
+              >
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Shon Watson</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Research Scientist</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Shon Watson</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Research Scientist</i>
+            </p>
+            <hr style="border-color: black;" />
+          </section>
 
-                </section>
+          <section id="content2">
+            <a
+              href="karen_arreguin"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Karen Arreguin
+            </a>
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Biology Major with Chemistry Minor'22</i>
+            </p>
+            <hr style="border-color: black;" />
 
+            <a
+              href="keaton_brewster"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Keaton Brewster</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Physics student '21</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                <section id="content2">
-                    
-                    <a href="karen_arreguin" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Karen Arreguin </a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Biology Major with Chemistry Minor'22</i> </p>
-                    <hr style="border-color: black;" />
-
-                     <a href="keaton_brewster" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Keaton Brewster</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Physics student '21</i></p>
-                    <hr style="border-color: black;" />
-
-<!--
+            <!--
 I need to email this person when school starts and demand that she fills the form for profile information!
 
                     <a href="beau_bunnell" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Beau Bunnell</a>
@@ -401,41 +615,111 @@ I need to email this person when school starts and demand that she fills the for
                     <hr style="border-color: black;" />
 -->
 
-                     <a href="hailey_burden" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Hailey Burden</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Biochemistry student '18</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="sergio_carranza" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Sergio Carranza</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Engineering Major '21</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="tyler_cepica" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Tyler Cepica</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Biochemistry Major '20</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="mallorie_coltharp" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Mallorie Coltharp</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Biochemistry Major '21</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="hailey_burden"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Hailey Burden</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Biochemistry student '18</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="brazos_fitch" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Brazos Fitch</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="matthew_flowers" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Matthew  Flowers</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Physics and Engineering double Major '23</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="sergio_carranza"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Sergio Carranza</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Major '21</i>
+            </p>
+            <hr style="border-color: black;" />
 
-<!--
+            <a
+              href="tyler_cepica"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Tyler Cepica</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Biochemistry Major '20</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="mallorie_coltharp"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Mallorie Coltharp</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Biochemistry Major '21</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="brazos_fitch"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Brazos Fitch</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="matthew_flowers"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Matthew Flowers</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Physics and Engineering double Major '23</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <!--
 I need to email this person when school starts and demand that she fills the form for profile information!
 
                      <a href="lezlei_haag" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Lezlei Haag</a>
                     <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student  Still need more info here </i></p>
                     <hr style="border-color: black;" />
 -->
-                    <a href="reuben_howe" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Reuben Howe</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Major '22</i></p>
-                    <hr style="border-color: black;" />
-<!--
+            <a
+              href="reuben_howe"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Reuben Howe</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Major '22</i>
+            </p>
+            <hr style="border-color: black;" />
+            <!--
 I need to email this person when school starts and demand that she fills the form for profile information!
 
                        <a href="david_hoyt" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">David Hoyt</a>
@@ -443,18 +727,51 @@ I need to email this person when school starts and demand that she fills the for
                     <hr style="border-color: black;" />
 -->
 
-                    <a href="aline_tresor" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Aline Tresor Ineza</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student <!-- Still need some info here --></i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="rick_kagoro" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Rick Kagoro-Lumala </a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Math and Physics double Major '23</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="aline_tresor"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Aline Tresor Ineza</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i
+                >Engineering Student
+                <!-- Still need some info here --></i
+              >
+            </p>
+            <hr style="border-color: black;" />
 
-                      <a href="ronald_laehn" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Ronald Laehn</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student</i></p>
-                    <hr style="border-color: black;" />
-<!--
+            <a
+              href="rick_kagoro"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Rick Kagoro-Lumala
+            </a>
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Math and Physics double Major '23</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="ronald_laehn"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Ronald Laehn</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student</i>
+            </p>
+            <hr style="border-color: black;" />
+            <!--
 
 I need to email this person when school starts and demand that she fills the form for profile information!
 
@@ -462,159 +779,468 @@ I need to email this person when school starts and demand that she fills the for
                     <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student </i></p>
                     <hr style="border-color: black;" />
 
--->       
-                    <a href="felix_mbikogbia" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Felix Mbikogbia</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Computer Science Student, '21</i></p>
-                    <hr style="border-color: black;" />
+-->
+            <a
+              href="felix_mbikogbia"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Felix Mbikogbia</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Computer Science Student, '21</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="brighton_mica" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Brighton Mica</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Computer Science Student, '20</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="diane_akimana" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Diane Akimana Mukundwa</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student '22</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="samuel_mulder" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Samuel Mulder</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Medical Physics Student</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="elliott_neal" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Elliott Neal</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Mechanical Engineering Major '23</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="chad_onstead" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Chad Onstead</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Engineering Major '21</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="brighton_mica"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Brighton Mica</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Computer Science Student, '20</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                     <a href="michael_ranger" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Michael Ranger</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="bobby_ruiz.html" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Bobby Ruiz Jr</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Engineering Major '20</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="jackson_sho%C3%BCltz" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Jackson Shoültz</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Biology and Mathematics Major '21</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="diane_akimana"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Diane Akimana Mukundwa</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student '22</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="kaden_taylor" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Kaden Taylor</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>High School Student</i></p>
-                    <hr style="border-color: black;" />
+            <a
+              href="samuel_mulder"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Samuel Mulder</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Medical Physics Student</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                      <a href="doty_tim" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Doty Tim</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="olive_t" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Olive Tuyishimire</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Engineering Major '20</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="elliott_neal"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Elliott Neal</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Mechanical Engineering Major '23</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="matthew_williams" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Matthew Williams</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Computer Science and Physics student '19</i></p>
-                    <hr style="border-color: black;" /> 
-                    
-                </section>
+            <a
+              href="chad_onstead"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Chad Onstead</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Major '21</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                
-                
-                <section id="content3">
-                    
-                    <a href="thomas_baily" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Thomas F Bailey</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                     <a href="david_halbert" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">David Halbert</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="andrew_harmon" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Andrew Harmon</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Next Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="charles_ivey" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Charles Ivey</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>First Chairman of ACU Physics Departments</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="jack_mcglothlin" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Jack V. McGlothlin</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="shawn_mcglothlin" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Shawn McGlothlin</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="john_scott" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">John O. Scott</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>NEXT Lab Advisor</i> </p>
-                    <hr style="border-color: black;" />
-                </section>
+            <a
+              href="michael_ranger"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Michael Ranger</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                 <section id="content4">
+            <a
+              href="bobby_ruiz.html"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Bobby Ruiz Jr</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Major '20</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="rusty_towell_committee" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Rusty Towell</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>NEXT Lab Director and 
-                        ACU Professor of Physics</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="jackson_sho%C3%BCltz"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Jackson Shoültz</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Biology and Mathematics Major '21</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="jim_porter_committee" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Jim Porter</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>NEXT Lab Oversight Committee Member</i> </p>
-                    <hr style="border-color: black;" />
-                     
-                     <a href="doug_robison_committee" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Doug Robison</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>NEXT Lab Oversight Committee Member</i> </p>
-                    <hr style="border-color: black;" />
-                     
-                     <a href="schubert_p_committee" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Phil Schubertll</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>ACU President and NEXT Lab Oversight Committee Member</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                </section>
+            <a
+              href="kaden_taylor"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Kaden Taylor</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>High School Student</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                <section id="content5">
-                    
-                    <a href="tabita_barakagwira" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Tabita Barakagwira</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Engineering Student </i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="reuben_byrd" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Reuben Byrd</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Physics student '18</i></p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="caleb_hicks" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Caleb Hicks</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Physics student '18</i></p>
-                    <hr style="border-color: black;" />
+            <a
+              href="doty_tim"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Doty Tim</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                     <a href="tony_hill" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Tony Hill</a>
-                    <p style="color:black; opacity: 0.5; font-size:  smaller;"><i>President of Starr Dover. Senior Physics Researcher.</i></p>
-                    <hr style="border-color: black;" />
-                    
-                     <a href="rich_jinkerson" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Rich Jinkerson</a>
-                    <p style="color:black; opacity: 0.5; font-size:  smaller;"><i>Associate Professor, Department of Engineering and Physics</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="emily_mikeska" style="color: rgb(123,164,221);font-weight: bold; font-size: large;">Emily Mikeska</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Chemistry Major</i></p>
-                    <hr style="border-color: black;" />
+            <a
+              href="olive_t"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Olive Tuyishimire</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Major '20</i>
+            </p>
+            <hr style="border-color: black;" />
 
-                    <a href="bradley_mitchell" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Bradley Mitchell</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller"><i>Senior Engineering student</i> </p>
-                    <hr style="border-color: black;" />
-                    
-                    <a href="matt_steele" style="color: rgb(123,164,221); font-weight: bold; font-size: large;">Dr. Matt Steele</a>
-                    <p style="color: black; opacity: 0.5; font-size:  smaller;"><i>Assistant Professor Department of Engineering and Physics.</i> </p>
-                    <hr style="border-color: black;" />
+            <a
+              href="matthew_williams"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Matthew Williams</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Computer Science and Physics student '19</i>
+            </p>
+            <hr style="border-color: black;" />
+          </section>
 
-                </section>
-               
+          <section id="content3">
+            <a
+              href="thomas_baily"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Thomas F Bailey</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
 
-            </div>
+            <a
+              href="david_halbert"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >David Halbert</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="andrew_harmon"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Andrew Harmon</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Next Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="charles_ivey"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Charles Ivey</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>First Chairman of ACU Physics Departments</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="jack_mcglothlin"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Jack V. McGlothlin</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="shawn_mcglothlin"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Shawn McGlothlin</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="john_scott"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >John O. Scott</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Advisor</i>
+            </p>
+            <hr style="border-color: black;" />
+          </section>
+
+          <section id="content4">
+            <a
+              href="rusty_towell_committee"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Rusty Towell</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Director and ACU Professor of Physics</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="jim_porter_committee"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Jim Porter</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Oversight Committee Member</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="doug_robison_committee"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Doug Robison</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>NEXT Lab Oversight Committee Member</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="schubert_p_committee"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Phil Schubertll</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>ACU President and NEXT Lab Oversight Committee Member</i>
+            </p>
+            <hr style="border-color: black;" />
+          </section>
+
+          <section id="content5">
+            <a
+              href="tabita_barakagwira"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Tabita Barakagwira</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Engineering Student </i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="reuben_byrd"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Reuben Byrd</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Physics student '18</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="caleb_hicks"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Caleb Hicks</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Physics student '18</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="tony_hill"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Tony Hill</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>President of Starr Dover. Senior Physics Researcher.</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="rich_jinkerson"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Rich Jinkerson</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Associate Professor, Department of Engineering and Physics</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="emily_mikeska"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Emily Mikeska</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Chemistry Major</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="bradley_mitchell"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Bradley Mitchell</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Senior Engineering student</i>
+            </p>
+            <hr style="border-color: black;" />
+
+            <a
+              href="matt_steele"
+              style="
+                color: rgb(123, 164, 221);
+                font-weight: bold;
+                font-size: large;
+              "
+              >Dr. Matt Steele</a
+            >
+            <p style="color: black; opacity: 0.5; font-size: smaller;">
+              <i>Assistant Professor Department of Engineering and Physics.</i>
+            </p>
+            <hr style="border-color: black;" />
+          </section>
         </div>
+      </div>
     </div>
     <div style="margin-bottom: 20px;"></div>
     <div class="bottom-bar">
-        &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+      &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights
+      Reserved.
     </div>
-
-</body>
+  </body>
 </html>

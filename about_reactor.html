@@ -1,288 +1,472 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>ABOUT REACTOR</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-<body>
-
-    <nav class="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.3s; z-index: 1; border-radius: 0;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="home"><img src="image/logo_newtag.png" height=85 width=200 /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav"></ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home">HOME</a></li>
-                    <li><a href="videos">VIDEOS</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about">Mission</a></li>
-                            <li><a href="history">History</a></li>
-                            <li><a href="whyacu">Why ACU?</a></li>
-                            <li><a href="members">NEXT's Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="whynuclear">Why Nuclear?</a></li>
-                            <li><a href="about_reactor">About Reactor</a></li>
-                            <li><a href="reactor_benefits">Reactor's Benefits</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="media_coverages">Media Coverages</a></li>
-                            <li><a href="relatedsites">Related Sites and Stories</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact_us">CONTACT US</a></li>
-
-                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
-                </ul>
-            </div>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-inverse"
+      style="
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+        z-index: 1;
+        border-radius: 0;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home"
+            ><img src="image/logo_newtag.png" height="85" width="200"
+          /></a>
         </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">HOME</a></li>
+            <li><a href="videos">VIDEOS</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ABOUT<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="about">Mission</a></li>
+                <li><a href="history">History</a></li>
+                <li><a href="whyacu">Why ACU?</a></li>
+                <li><a href="members">NEXT's Team</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >RESEARCH<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="whynuclear">Why Nuclear?</a></li>
+                <li><a href="about_reactor">About Reactor</a></li>
+                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >NEWS<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="media_coverages">Media Coverages</a></li>
+                <li><a href="relatedsites">Related Sites and Stories</a></li>
+              </ul>
+            </li>
+            <li><a href="contact_us">CONTACT US</a></li>
+
+            <li>
+              <a
+                href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688"
+                target="_blank"
+                >DONATE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () { scrollFunction() };
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("navbar navbar-inverse").style.top = "0";
-            } else {
-                document.getElementById("navbar navbar-inverse").style.top = "-50px";
-            }
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("navbar navbar-inverse").style.top = "0";
+        } else {
+          document.getElementById("navbar navbar-inverse").style.top = "-50px";
         }
+      }
     </script>
 
-
     <style>
-        .bottom-bar {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
-        }
+      .bottom-bar {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background: #000;
+        padding: 15px 0;
+      }
 
-        * {
-            box-sizing: border-box;
+      * {
+        box-sizing: border-box;
+      }
+
+      ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225, 225, 225);
+        position: relative;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      ul.sidenav li a {
+        display: block;
+        color: #000;
+        padding: 15px 16px;
+        text-decoration: none;
+      }
+
+      ul.sidenav li a.active {
+        background-color: #222;
+        color: white;
+      }
+
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #222;
+        color: white;
+      }
+
+      div.content {
+        padding: 1px 16px;
+      }
+
+      #padding_title {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      #REAL {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .column {
+        float: left;
+        width: 65%;
+        padding: 0.5em;
+        padding-right: 13%;
+      }
+
+      .column1 {
+        float: left;
+        width: 35%;
+        padding: 0.5em;
+        padding-left: 13%;
+      }
+
+      #sideCOL {
+        margin-top: 10px;
+        padding: 1px 16px 16px;
+      }
+
+      .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 740px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
         }
 
         ul.sidenav {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: rgb(225,225,225);
-            position: relative;
-            height: 100%;
-            overflow: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 15px 16px;
-                text-decoration: none;
-            }
-
-                ul.sidenav li a.active {
-                    background-color: #222;
-                    color: white;
-                }
-
-                ul.sidenav li a:hover:not(.active) {
-                    background-color: #222;
-                    color: white;
-                }
-
-        div.content {
-            padding: 1px 16px;
+          width: 100%;
+          height: auto;
+          position: relative;
         }
 
         #padding_title {
-            padding-left: 12%;
-            padding-right: 12%;
-        }
-
-        #REAL {
-            color: white;
-            text-align: center;
-            padding: 5px;
-            width: 100%;
-            background-color: #222;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          padding-left: 2%;
+          padding-right: 2%;
         }
 
         .column {
-            float: left;
-            width: 65%;
-            padding: 0.5em;
-            padding-right: 13%;
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
         }
 
         .column1 {
-            float: left;
-            width: 35%;
-            padding: 0.5em;
-            padding-left: 13%;
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        #quote {
+          display: none;
+        }
+
+        #quote1 {
+          display: none;
         }
 
         #sideCOL {
-            margin-top: 10px;
-            padding: 1px 16px 16px;
+          display: none;
         }
-
-        .row1:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media screen and (max-width: 740px) {
-            ul.sidenav li a {
-                text-align: center;
-                float: none;
-            }
-
-            ul.sidenav {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            #padding_title {
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-
-            .column {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .column1 {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            #quote {
-                display: none;
-            }
-
-            #quote1 {
-                display: none;
-            }
-
-            #sideCOL {
-                display: none;
-            }
-        }
+      }
     </style>
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-        <h1 id="REAL">About Reactor</h1>
+      <h1 id="REAL">About Reactor</h1>
     </div>
     <div class="row1">
-        <div class="column1">
-            <ul class="sidenav">
-                <li><a href="whynuclear">Why Nuclear?</a></li>
-                <li><a class="active" href="about_reactor">About Reactor</a></li>
-                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
-                <!--<li><a href="#contact">Student</a></li>-->
-                <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
-            </ul>
-            <aside id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
-                <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
-                    
-                    <li>
-                        <a href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/" target="_blank" style="color: rgb(123,164,221);">ACU Board of Trustees adds Donny Edwards, Fernando Nasymth and Doug Robison</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>March 6, 2020</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/" target="_blank" style="color: rgb(123,164,221);">Pamplin not only teaches chemistry, he’s putting his knowledge into practice in ACU’s NEXT Lab</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>January 13, 2020</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2019/10/30/next-lab-researcher-tackles-project-to-extract-medical-isotope/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab researcher tackles project to extract medical isotope</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>October 30, 2019</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2019/10/02/gibbs-keeps-projects-running-smoothly-at-acus-next-lab/" target="_blank" style="color: rgb(123,164,221);">Gibbs keeps projects running smoothly at ACU’s cutting-edge NEXT Lab</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>October 2, 2019</i></p>
-                    </li>
+      <div class="column1">
+        <ul class="sidenav">
+          <li><a href="whynuclear">Why Nuclear?</a></li>
+          <li><a class="active" href="about_reactor">About Reactor</a></li>
+          <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+          <!--<li><a href="#contact">Student</a></li>-->
+          <li>
+            <i
+              id="quote"
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(98, 99, 102);
+                text-align: center;
+                margin-top: 5px;
+              "
+              >"Finding global solutions to the world’s most critical needs"
+            </i>
+          </li>
+        </ul>
+        <aside
+          id="sideCOL"
+          style="
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h3
+            style="
+              color: white;
+              text-align: left;
+              margin-left: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            &rArr; MEDIA COVERAGE
+          </h3>
+          <ul
+            class="home-side-touts"
+            style="color: white; text-align: left; margin-right: 10px;"
+          >
+            <li>
+              <a
+                href="https://acu.today/2020/04/13/baileys-expertise-in-geothermal-design-primed-him-for-role-as-next-lab-senior-mechanical-engineer/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Bailey’s expertise in geothermal design primed him for role as
+                NEXT Lab senior mechanical engineer</a
+              >
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>April 13, 2020</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >ACU Board of Trustees adds Donny Edwards, Fernando Nasymth and
+                Doug Robison</a
+              >
 
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/" target="_blank" style="color: rgb(123,164,221);">Abilene Christian University science faculty gets salty over future of nuclear power</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>July 7, 2019</i></p>
-                    <li>
-                        <a href="http://acu.today/2019/01/29/next-lab-brings-pfeifer-home-to-join-acus-pioneering-research-program/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab brings Pfeifer home to join ACU’s pioneering research program</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>January 29, 2019</i></p>
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>March 6, 2020</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Pamplin not only teaches chemistry, he’s putting his knowledge
+                into practice in ACU’s NEXT Lab</a
+              >
 
-                      <li>
-                        <a href="https://ktxs.com/news/local/robison-excelsior-foundation-pledges-over-3-million-in-funding-for-acus-next-lab" target="_blank" style="color: rgb(123,164,221);">Robison Excelsior Foundation pledges over $3 million in funding for ACU's NEXT Lab</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 29, 2018</i></p>
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>January 13, 2020</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2019/10/30/next-lab-researcher-tackles-project-to-extract-medical-isotope/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab researcher tackles project to extract medical
+                isotope</a
+              >
 
-                     <li>
-                        <a href="http://acu.today/2018/10/16/next-lab-receives-3-2-million-from-robison-excelsior-foundation/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives $3.2 million from Robison Excelsior Foundation</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 16, 2018</i></p>
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>October 30, 2019</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2019/10/02/gibbs-keeps-projects-running-smoothly-at-acus-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Gibbs keeps projects running smoothly at ACU’s cutting-edge
+                NEXT Lab</a
+              >
 
-                    <li>
-                        <a href="https://www.energy.gov/ne/articles/idaho-national-laboratory-awards-39-million-support-proposed-fast-spectrum-test-reactor" target="_blank" style="color: rgb(123,164,221);">Idaho National Laboratory awards $3.9 Million in support of proposed fast spectrum test reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Oct 5, 2018</i></p>
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>October 2, 2019</i>
+              </p>
+            </li>
 
-                    <li>
-                        <a href="http://acu.today/2018/08/31/next-lab-receives-federal-funding-to-partner-with-idaho-national-lab-mit-yale-and-others-on-research-reactor/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives federal funding to partner with Idaho National Lab, MIT, Yale and others on research reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>August 31, 2018</i></p>
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/2018/06/26/dcoa-approves-300-000-r-d-dollars-acu-energy-project/736552002/" target="_blank" style="color: rgb(123,164,221);">DCOA approves $300,000 in R&D dollars for Abilene Christian nuclear energy project</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>June 26, 2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab focuses research on solving global problems</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/" target="_blank" style="color: rgb(123,164,221);">Rusty Towell: Innovative scholar, down-to-earth teacher</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <!-- <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
+            <li>
+              <a
+                href="https://www.reporternews.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Abilene Christian University science faculty gets salty over
+                future of nuclear power</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>July 7, 2019</i></p>
+            <li>
+              <a
+                href="http://acu.today/2019/01/29/next-lab-brings-pfeifer-home-to-join-acus-pioneering-research-program/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab brings Pfeifer home to join ACU’s pioneering research
+                program</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>January 29, 2019</i>
+            </p>
+
+            <li>
+              <a
+                href="https://ktxs.com/news/local/robison-excelsior-foundation-pledges-over-3-million-in-funding-for-acus-next-lab"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Robison Excelsior Foundation pledges over $3 million in funding
+                for ACU's NEXT Lab</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>October 29, 2018</i>
+            </p>
+
+            <li>
+              <a
+                href="http://acu.today/2018/10/16/next-lab-receives-3-2-million-from-robison-excelsior-foundation/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab receives $3.2 million from Robison Excelsior
+                Foundation</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>October 16, 2018</i>
+            </p>
+
+            <li>
+              <a
+                href="https://www.energy.gov/ne/articles/idaho-national-laboratory-awards-39-million-support-proposed-fast-spectrum-test-reactor"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Idaho National Laboratory awards $3.9 Million in support of
+                proposed fast spectrum test reactor</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Oct 5, 2018</i></p>
+
+            <li>
+              <a
+                href="http://acu.today/2018/08/31/next-lab-receives-federal-funding-to-partner-with-idaho-national-lab-mit-yale-and-others-on-research-reactor/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab receives federal funding to partner with Idaho
+                National Lab, MIT, Yale and others on research reactor</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>August 31, 2018</i>
+            </p>
+            <li>
+              <a
+                href="https://www.reporternews.com/story/news/2018/06/26/dcoa-approves-300-000-r-d-dollars-acu-energy-project/736552002/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >DCOA approves $300,000 in R&D dollars for Abilene Christian
+                nuclear energy project</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>June 26, 2018</i>
+            </p>
+            <li>
+              <a
+                href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab focuses research on solving global problems</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Jan 25,2018</i></p>
+            <li>
+              <a
+                href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Rusty Towell: Innovative scholar, down-to-earth teacher</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Jan 25,2018</i></p>
+            <!-- <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
                     <p style="opacity: 0.5; font-size: smaller"><i>Jan 18, 2018</i></p> -->
-                    <li><a href="media_coverages" style="color: rgb(123,164,221);">more...</a></li>
-                </ul>
-                <!--
+            <li>
+              <a href="media_coverages" style="color: rgb(123, 164, 221);"
+                >more...</a
+              >
+            </li>
+          </ul>
+          <!--
                            <hr />
                            <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; NEXT UPDATES</h3>
                             <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
@@ -292,32 +476,162 @@
                                <p style="opacity: 0.5; font-size: smaller"><i>July 2017</i></p>
                            </ul>
                   -->
-                <hr />
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; OUR CAMPUS</h3>
-                <a href="http://www.acu.edu" target="_blank"><img src="image/newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-            </aside>
+          <hr />
+          <h3
+            style="
+              color: white;
+              text-align: left;
+              margin-left: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            &rArr; OUR CAMPUS
+          </h3>
+          <a href="http://www.acu.edu" target="_blank"
+            ><img
+              src="image/newaculogo.jpg"
+              style="
+                display: block;
+                padding: 15px 10px 15px 10px;
+                margin: 0 auto;
+                background-color: white;
+                width: 70%;
+                height: auto;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+          /></a>
+        </aside>
+      </div>
+      <div class="column">
+        <div
+          class="content"
+          style="
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h2
+            style="
+              color: rgb(98, 99, 102);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            THE NEED FOR ADVANCED REACTORS
+          </h2>
+          <p style="color: black;">
+            There are approximately 100 commercial nuclear reactors in the
+            United States. All of these reactors are based on technology more
+            than 60 years old, called Pressurized Water Reactors (PWRs). They
+            use solid uranium fuel that has been enriched so that the fissile
+            isotope (U-235) is more abundant than when uranium is found in
+            nature. They all use water as both the moderator and primary
+            coolant. These reactors are good, but newer reactors can be much
+            better. Key advanced reactor design features that yield superior
+            reactor performance are the uses of liquid fuel in a molten salt
+            coolant.
+          </p>
+          <h3
+            style="
+              color: rgb(98, 99, 102);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            SOLID VS. LIQUID FUEL
+          </h3>
+          <p style="color: black;">
+            Current nuclear reactors around the world load fuel into the reactor
+            core in the form of a solid. Typically, uranium dioxide is formed
+            into small pellets that are encased in special coatings to prevent
+            the leakage of radioactive materials from the fuel rod into the
+            primary coolant. As the fuel fission, the uranium atom is replaced
+            by a pair of other atoms (called fission fragments). Over time, this
+            process deteriorates the physical integrity of the fuel rod and
+            limits the fuel utilization to only a few percent. Once 3 to 5
+            percent of the fuel is used, the remainder of the fuel and the
+            fission fragments are set aside and classified as spent nuclear
+            fuel, or more commonly, nuclear waste.
+          </p>
+          <p style="color: black;">
+            Three major shortcomings are inherent in the use of solid fuel: More
+            than 95 percent of the original fuel is wasted; valuable materials
+            produced as fission fragments (including lifesaving medical
+            isotopes) can’t be harvested; and the potential exists for a serious
+            reactor accident known as a reactor core meltdown during which the
+            solid fuel overheats and melts.
+          </p>
+          <p style="color: black;">
+            Using a liquid fueled reactor can eliminate all of these
+            shortcomings. In a liquid fueled reactor the fuel is suspending in
+            the primary coolant like sugar in a cup of coffee. The fuel remains
+            in the reactor until it used resulting in near 100% fuel
+            utilization. The fission fragments are not hidden behind a metal
+            cladding, but are also suspended in the coolant so they can be
+            extracted and used. Finally, there is no solid fuel rod to melt in
+            an accident. In fact, with a liquid fuel the reactor will
+            automatically drain the fuel out of the core if anything causes the
+            reactor temperature to rise too much. Liquid fueled reactors are
+            “walk-away-safe”.
+          </p>
+          <h3
+            style="
+              color: rgb(98, 99, 102);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            CHOICE OF COOLANT
+          </h3>
+          <p style="color: black;">
+            The purpose of the primary coolant is to absorb the energy released
+            as heat by the fission process and transport that energy to the
+            electricity producing side of the power plant. An ideal coolant
+            would be able to contain a large amount of energy per volume (a
+            quantity known as heat capacity) and remain a liquid at high
+            temperatures. The most common choice of coolant used in nuclear
+            reactors is water.
+          </p>
+          <p style="color: black;">
+            While water has a high heat capacity as a liquid, it becomes a gas
+            at 100° C. As a gas, it has a very poor heat capacity. To allow the
+            reactor to operate at higher temperatures, the entire reactor core
+            and primary coolant system is designed to operate at very high
+            pressures. This defining characteristic is why these reactors are
+            referred to as Pressurized Water Reactors (PWRs). While this is a
+            proven technology, the shortcomings of water as a coolant and the
+            dangers of operating at high pressures directly contributed to the
+            nuclear accident at Fukushima.
+          </p>
+          <p style="color: black;">
+            A far superior coolant is a molten salt. A salt in chemistry is just
+            a substance that is held together by the electric force when
+            positive and negative charged ions are mixed. Typically these
+            combine in such a way to form regular crystal structures at room
+            temperature much like ordinary table salt. However, if the
+            temperature of the salt is raised high enough, the solid crystal
+            will melt into a liquid and become a molten salt. Once melted, these
+            molten salts look and flow much like water. Unlike water, though,
+            they do not become a gas until they are over 1400° C, so the reactor
+            core does not have to be built to operate at high pressures. This
+            avoids both the cost and danger associated with PWR.
+          </p>
+          <p style="color: black;">
+            Finally, it should be noted that operating the reactor at higher
+            temperatures allows a more than 50 percent increase in efficiency
+            when converting heat to electricity
+          </p>
         </div>
-        <div class="column">
-            <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">THE NEED FOR ADVANCED REACTORS</h2>
-                <p style="color: black;">There are approximately 100 commercial nuclear reactors in the United States. All of these reactors are based on technology more than 60 years old, called Pressurized Water Reactors (PWRs).  They use solid uranium fuel that has been enriched so that the fissile isotope (U-235) is more abundant than when uranium is found in nature. They all use water as both the moderator and primary coolant. These reactors are good, but newer reactors can be much better. Key advanced reactor design features that yield superior reactor performance are the uses of liquid fuel in a molten salt coolant.</p>
-                <h3 style="color:rgb(98,99,102); font-weight: bold; text-align: center;">SOLID VS. LIQUID FUEL</h3>
-                <p style="color: black;">Current nuclear reactors around the world load fuel into the reactor core in the form of a solid. Typically, uranium dioxide is formed into small pellets that are encased in special coatings to prevent the leakage of radioactive materials from the fuel rod into the primary coolant. As the fuel fission, the uranium atom is replaced by a pair of other atoms (called fission fragments). Over time, this process deteriorates the physical integrity of the fuel rod and limits the fuel utilization to only a few percent. Once 3 to 5 percent of the fuel is used, the remainder of the fuel and the fission fragments are set aside and classified as spent nuclear fuel, or more commonly, nuclear waste.</p>
-                <p style="color: black;">Three major shortcomings are inherent in the use of solid fuel: More than 95 percent of the original fuel is wasted; valuable materials produced as fission fragments (including lifesaving medical isotopes) can’t be harvested; and the potential exists for a serious reactor accident known as a reactor core meltdown during which the solid fuel overheats and melts.</p>
-                <p style="color: black;">Using a liquid fueled reactor can eliminate all of these shortcomings. In a liquid fueled reactor the fuel is suspending in the primary coolant like sugar in a cup of coffee.  The fuel remains in the reactor until it used resulting in near 100% fuel utilization.  The fission fragments are not hidden behind a metal cladding, but are also suspended in the coolant so they can be extracted and used.  Finally, there is no solid fuel rod to melt in an accident.  In fact, with a liquid fuel the reactor will automatically drain the fuel out of the core if anything causes the reactor temperature to rise too much.  Liquid fueled reactors are “walk-away-safe”.</p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold; text-align: center;">CHOICE OF COOLANT</h3>
-                <p style="color: black;">The purpose of the primary coolant is to absorb the energy released as heat by the fission process and transport that energy to the electricity producing side of the power plant. An ideal coolant would be able to contain a large amount of energy per volume (a quantity known as heat capacity) and remain a liquid at high temperatures. The most common choice of coolant used in nuclear reactors is water.</p>
-                <p style="color: black;">While water has a high heat capacity as a liquid, it becomes a gas at 100° C. As a gas, it has a very poor heat capacity. To allow the reactor to operate at higher temperatures, the entire reactor core and primary coolant system is designed to operate at very high pressures. This defining characteristic is why these reactors are referred to as Pressurized Water Reactors (PWRs). While this is a proven technology, the shortcomings of water as a coolant and the dangers of operating at high pressures directly contributed to the nuclear accident at Fukushima.</p>
-                <p style="color: black;">A far superior coolant is a molten salt. A salt in chemistry is just a substance that is held together by the electric force when positive and negative charged ions are mixed. Typically these combine in such a way to form regular crystal structures at room temperature much like ordinary table salt. However, if the temperature of the salt is raised high enough, the solid crystal will melt into a liquid and become a molten salt. Once melted, these molten salts look and flow much like water. Unlike water, though, they do not become a gas until they are over 1400° C, so the reactor core does not have to be built to operate at high pressures. This avoids both the cost and danger associated with PWR.</p>
-                <p style="color: black;">Finally, it should be noted that operating the reactor at higher temperatures allows a more than 50 percent increase in efficiency when converting heat to electricity</p>
-
-            </div>
-        </div>
+      </div>
     </div>
     <div style="margin-bottom: 20px;"></div>
     <div class="bottom-bar">
-        &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+      &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights
+      Reserved.
     </div>
-
-</body>
+  </body>
 </html>

@@ -1,414 +1,678 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>MEMBERS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-<body style="overflow-x: hidden;">
-
-    <nav class="navbar navbar-inverse" id="navbar navbar-inverse" style="position: fixed;top: 0px; width: 100%;display:block;transition: top 0.2s; z-index: 1; border-radius: 0;">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="home"><img src="image/logo_newtag.png" height=85 width=200 /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav"></ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="home">HOME</a></li>
-                    <li><a href="videos">VIDEOS</a></li>
-                    <li class="active">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ABOUT<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about">Mission</a></li>
-                            <li><a href="history">History</a></li>
-                            <li><a href="whyacu">Why ACU?</a></li>
-                            <li><a href="members">NEXT's Team</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESEARCH<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="whynuclear">Why Nuclear?</a></li>
-                            <li><a href="about_reactor">About Reactor</a></li>
-                            <li><a href="reactor_benefits">Reactor's Benefits</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">NEWS<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="media_coverages">Media Coverages</a></li>
-                            <li><a href="relatedsites">Related Sites and Stories</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact_us">CONTACT US</a></li>
-
-                    <li><a href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688" target="_blank">DONATE</a></li>
-                </ul>
-            </div>
+  </head>
+  <body style="overflow-x: hidden;">
+    <nav
+      class="navbar navbar-inverse"
+      id="navbar navbar-inverse"
+      style="
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.2s;
+        z-index: 1;
+        border-radius: 0;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home"
+            ><img src="image/logo_newtag.png" height="85" width="200"
+          /></a>
         </div>
-    </nav>
-    <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () { scrollFunction() };
-        function scrollFunction() {
-            if ((document.body.scrollTop > 15 || document.documentElement.scrollTop > 15)) {
-                document.getElementById("navbar navbar-inverse").style.Top = "10";
-                //console.log(document.body.scrollTop);
-
-
-
-                //console.log(document.documentElement.scrollTop);
-            } else {
-                document.getElementById("navbar navbar-inverse").style.Top = "0";
-                //console.log("STOP");
-                //console.log(document.documentElement.scrollTop);
-            }
-        }
-        var lastScrollTop = 0;
-        // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-        element.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
-            var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-            if (st > lastScrollTop) {
-                // downscroll code
-                console.log("TRUE");
-                document.getElementById("navbar navbar-inverse").style.marginTop = "20px";
-            } else {
-                // upscroll code
-                document.getElementById("navbar navbar-inverse").style.marginTop = "0px";
-            }
-            lastScrollTop = st;
-        }, false);
-    </script>
-
-
-    <style>
-        section {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid;
-        }
-
-        input {
-            display: none;
-        }
-
-        label {
-            display: inline-block;
-            width: auto;
-            padding: 15px 25px;
-            font-weight: 600;
-            font-size: larger;
-            text-align: center;
-            color: black;
-            border: 1px solid transparent lightgray;
-            background-color: lightgray;
-        }
-
-            label:before {
-                font-family: fontawesome;
-                font-weight: normal;
-            }
-
-
-            label:hover {
-                color: white;
-                background-color: rgb(98,99,102);
-                cursor: pointer;
-            }
-
-        input:checked + label {
-            color: white;
-            background-color: rgb(98,99,102);
-            border: 1px solid #ddd;
-            border-top: 2px solid rgb(98,99,102);
-        }
-
-        #tab1:checked ~ #content1,
-        #tab2:checked ~ #content2, #tab3:checked ~ #content3 {
-            display: block;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        ul.sidenav {
-            list-style-type: none;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            width: auto;
-            background-color: rgb(225,225,225);
-            position: relative;
-            height: 100%;
-            overflow: auto;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-            ul.sidenav li a {
-                display: block;
-                color: #000;
-                padding: 15px 16px;
-                text-decoration: none;
-            }
-
-                ul.sidenav li a.active {
-                    background-color: #222;
-                    color: white;
-                }
-
-                ul.sidenav li a:hover:not(.active) {
-                    background-color: #222;
-                    color: white;
-                }
-
-        div.content {
-            padding: 1px 16px;
-        }
-
-        #padding_title {
-            padding-left: 12%;
-            padding-right: 12%;
-        }
-
-        #REAL {
-            color: white;
-            text-align: center;
-            padding: 5px;
-            width: 100%;
-            background-color: #222;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-
-        .column {
-            float: left;
-            width: 65%;
-            padding: 0.5em;
-            padding-right: 13%;
-        }
-
-        .column1 {
-            float: left;
-            width: 35%;
-            padding: 0.5em;
-            padding-left: 13%;
-        }
-
-        #sideCOL {
-            margin-top: 10px;
-            padding: 1px 16px 16px;
-        }
-
-        .row1:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        @media screen and (max-width: 740px) {
-            ul.sidenav li a {
-                text-align: center;
-                float: none;
-            }
-
-            ul.sidenav {
-                width: 100%;
-                height: auto;
-                position: relative;
-            }
-
-            #padding_title {
-                padding-left: 2%;
-                padding-right: 2%;
-            }
-
-            .column {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            .column1 {
-                width: 100%;
-                padding-left: 4%;
-                padding-right: 4%;
-            }
-
-            #quote {
-                display: none;
-            }
-
-            #quote1 {
-                display: none;
-            }
-
-            #sideCOL {
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 500px) {
-            label {
-                display: block;
-            }
-        }
-
-        .bottom-bar {
-            position: relative;
-            color: white;
-            text-align: center;
-            font-size: .8em;
-            text-transform: uppercase;
-            background: #000;
-            padding: 15px 0;
-        }
-    </style>
-
-    <p style="margin-top: 122px;"></p>
-    <div id="padding_title">
-        <h1 id="REAL">NEXT's Team</h1>
-    </div>
-    <div class="row1">
-        <div class="column1">
-            <ul class="sidenav">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">HOME</a></li>
+            <li><a href="videos">VIDEOS</a></li>
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ABOUT<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
                 <li><a href="about">Mission</a></li>
                 <li><a href="history">History</a></li>
                 <li><a href="whyacu">Why ACU?</a></li>
                 <li><a href="members">NEXT's Team</a></li>
-                <!--<li><a href="#contact">Student</a></li>-->
-                <li><i id="quote" style="font-size: 18px; font-weight: bold; color: rgb(98,99,102); text-align: center; margin-top: 5px;">"Finding global solutions to the world’s most critical needs" </i></li>
-            </ul>
-            <aside id="sideCOL" style="background-color: #222; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; MEDIA COVERAGE</h3>
-                <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
-                    
-                    <li>
-                        <a href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/" target="_blank" style="color: rgb(123,164,221);">ACU Board of Trustees adds Donny Edwards, Fernando Nasymth and Doug Robison</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>March 6, 2020</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/" target="_blank" style="color: rgb(123,164,221);">Pamplin not only teaches chemistry, he’s putting his knowledge into practice in ACU’s NEXT Lab</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>January 13, 2020</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2019/10/30/next-lab-researcher-tackles-project-to-extract-medical-isotope/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab researcher tackles project to extract medical isotope</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>October 30, 2019</i></p>
-                    </li>
-                    <li>
-                        <a href="https://acu.today/2019/10/02/gibbs-keeps-projects-running-smoothly-at-acus-next-lab/" target="_blank" style="color: rgb(123,164,221);">Gibbs keeps projects running smoothly at ACU’s cutting-edge NEXT Lab</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>October 2, 2019</i></p>
-                    </li>
-                    
-                    <li>
-                        <a href="https://diverseeducation.com/article/149979/" target="_blank" style="color: rgb(123,164,221);">Salt at Heart of Nuclear Research for Teams</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>July 18, 2019</i></p>
-                    </li>
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/" target="_blank" style="color: rgb(123,164,221);">Abilene Christian University science faculty gets salty over future of nuclear power</a>
-                        
-                        <p style="opacity: 0.5;font-size: smaller"><i>July 7, 2019</i></p>
-                        
-                        <ul>
-                            <i style="opacity: 0.5;font-size: 15px;">Other media sites that published the above article</i>
-                            <li>
-                                <a href="https://www.apnews.com/dd6f406f033344a38930be451bd68962?utm_source=myACU+News&utm_campaign=25cb7d8d5c-EMAIL_CAMPAIGN_2019_07_26_07_26&utm_medium=email&utm_term=0_4ad6e94749-25cb7d8d5c-28376341" target="_blank" style="opacity: 0.5;font-size: 15px;">AP News</a>
-                            </li>
-                            <li>
-                                <a href="https://amp.usatoday.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/" target="_blank" style="opacity: 0.5;font-size: 15px;">US Today News</a>
-                            </li>
-                            <li>
-                                <a href="https://www.washingtontimes.com/news/2019/jul/17/abilene-christian-university-nuclear-researchers-t/" target="_blank" style="opacity: 0.5;font-size: 15px;">The Washington Times</a>
-                            </li>
-                            <li>
-                                <a href="https://www.brownsvilleherald.com/news/texas/abilene-christian-university-nuclear-researchers-think-salt/article_5c42d0bb-3431-5f51-a10d-66ebcde8d715.html" target="_blank" style="opacity: 0.5;font-size: 15px;">The Brownsville Herald</a>
-                            </li>
-                            <li>
-                                <a href="https://www.valdostadailytimes.com/news/state_news/abilene-christian-university-nuclear-researchers-think-salt/article_df30a469-8215-5e64-b7b5-4b512a198f83.html" target="_blank" style="opacity: 0.5;font-size: 15px;">Valdosta Daily Times</a>
-                            </li>
-                            <li>
-                                <a href="https://www.victoriaadvocate.com/ap/state/abilene-christian-university-nuclear-researchers-think-salt/article_fc8c1406-4a39-502e-ab20-e60516fe9f14.html" target="_blank" style="opacity: 0.5;font-size: 15px;">Victoria Advocate</a>
-                            </li>
-                            <li>
-                                <a href="https://spotontexas.com/northwest-texas/859217/abilene-christian-university-nuclear.html" target="_blank" style="opacity: 0.5;font-size: 15px;">Spot On Texas</a>
-                            </li>
-                            <li>
-                                <a href="https://thebrunswicknews.com/news/state_news/abilene-christian-university-nuclear-researchers-think-salt/article_df335573-71b5-5969-ab93-5dbaeb034738.html" target="_blank" style="opacity: 0.5;font-size: 15px;">The Brunswick News</a>
-                            </li>
-                            <li>
-                                <a href="https://www.mdjonline.com/neighbor_newspapers/news/state/abilene-christian-university-nuclear-researchers-think-salt/article_92e0312e-11be-55a1-97b8-7dd812849983.html" target="_blank" style="opacity: 0.5;font-size: 15px;">Marietta Daily Journal</a>
-                            </li>
-                            <li>
-                                <a href="https://www.ncadvertiser.com/news/texas/article/Abilene-Christian-University-nuclear-researchers-14101792.php" target="_blank" style="opacity: 0.5;font-size: 15px;">New Canaan Advertiser</a>
-                            </li>
-                            <li>
-                                <a href="https://www.darientimes.com/news/texas/article/Abilene-Christian-University-nuclear-researchers-14101792.php" target="_blank" style="opacity: 0.5;font-size: 15px;">The Darien Times</a>
-                            </li>
-                            <li>
-                                <a href="https://www.greenbaypressgazette.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/" target="_blank" style="opacity: 0.5;font-size: 15px;">Green Bay Press Gazette</a>
-                            </li>
-                        </ul>
-                    </li>
-                    
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >RESEARCH<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="whynuclear">Why Nuclear?</a></li>
+                <li><a href="about_reactor">About Reactor</a></li>
+                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >NEWS<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="media_coverages">Media Coverages</a></li>
+                <li><a href="relatedsites">Related Sites and Stories</a></li>
+              </ul>
+            </li>
+            <li><a href="contact_us">CONTACT US</a></li>
 
-                	<li>
-                        <a href="http://acu.today/2019/01/29/next-lab-brings-pfeifer-home-to-join-acus-pioneering-research-program/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab brings Pfeifer home to join ACU’s pioneering research program</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>January 29, 2019</i></p>
+            <li>
+              <a
+                href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688"
+                target="_blank"
+                >DONATE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 15 ||
+          document.documentElement.scrollTop > 15
+        ) {
+          document.getElementById("navbar navbar-inverse").style.Top = "10";
+          //console.log(document.body.scrollTop);
 
-                      <li>
-                        <a href="https://ktxs.com/news/local/robison-excelsior-foundation-pledges-over-3-million-in-funding-for-acus-next-lab" target="_blank" style="color: rgb(123,164,221);">Robison Excelsior Foundation pledges over $3 million in funding for ACU's NEXT Lab</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 29, 2018</i></p>
-                    
-                    <li>
-                        <a href="https://www.powermag.com/technology-selected-for-does-versatile-test-reactor-program/" target="_blank" style="color: rgb(123,164,221);">Technology Selected for DOE’s Versatile Test Reactor Program</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>November 18, 2018</i></p>
+          //console.log(document.documentElement.scrollTop);
+        } else {
+          document.getElementById("navbar navbar-inverse").style.Top = "0";
+          //console.log("STOP");
+          //console.log(document.documentElement.scrollTop);
+        }
+      }
+      var lastScrollTop = 0;
+      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+      element.addEventListener(
+        "scroll",
+        function () {
+          // or window.addEventListener("scroll"....
+          var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScrollTop) {
+            // downscroll code
+            console.log("TRUE");
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "20px";
+          } else {
+            // upscroll code
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "0px";
+          }
+          lastScrollTop = st;
+        },
+        false
+      );
+    </script>
 
-                     <li>
-                        <a href="http://acu.today/2018/10/16/next-lab-receives-3-2-million-from-robison-excelsior-foundation/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives $3.2 million from Robison Excelsior Foundation</a>
-                    </li>
-                    <p style="opacity: 0.5;font-size: smaller"><i>October 16, 2018</i></p>
+    <style>
+      section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid;
+      }
 
-                    <li>
-                        <a href="https://www.energy.gov/ne/articles/idaho-national-laboratory-awards-39-million-support-proposed-fast-spectrum-test-reactor" target="_blank" style="color: rgb(123,164,221);">Idaho National Laboratory awards $3.9 Million in support of proposed fast spectrum test reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Oct 5, 2018</i></p>
+      input {
+        display: none;
+      }
 
-                    <li>
-                        <a href="http://acu.today/2018/08/31/next-lab-receives-federal-funding-to-partner-with-idaho-national-lab-mit-yale-and-others-on-research-reactor/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab receives federal funding to partner with Idaho National Lab, MIT, Yale and others on research reactor</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>August 31, 2018</i></p>
-                    <li>
-                        <a href="https://www.reporternews.com/story/news/2018/06/26/dcoa-approves-300-000-r-d-dollars-acu-energy-project/736552002/" target="_blank" style="color: rgb(123,164,221);">DCOA approves $300,000 in R&D dollars for Abilene Christian nuclear energy project</a>
-                    </li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>June 26, 2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/" target="_blank" style="color: rgb(123,164,221);">NEXT Lab focuses research on solving global problems</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <li><a href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/" target="_blank" style="color: rgb(123,164,221);">Rusty Towell: Innovative scholar, down-to-earth teacher</a></li>
-                    <p style="opacity: 0.5; font-size: smaller"><i>Jan 25,2018</i></p>
-                    <!-- <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
+      label {
+        display: inline-block;
+        width: auto;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: larger;
+        text-align: center;
+        color: black;
+        border: 1px solid transparent lightgray;
+        background-color: lightgray;
+      }
+
+      label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+      }
+
+      label:hover {
+        color: white;
+        background-color: rgb(98, 99, 102);
+        cursor: pointer;
+      }
+
+      input:checked + label {
+        color: white;
+        background-color: rgb(98, 99, 102);
+        border: 1px solid #ddd;
+        border-top: 2px solid rgb(98, 99, 102);
+      }
+
+      #tab1:checked ~ #content1,
+      #tab2:checked ~ #content2,
+      #tab3:checked ~ #content3 {
+        display: block;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225, 225, 225);
+        position: relative;
+        height: 100%;
+        overflow: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      ul.sidenav li a {
+        display: block;
+        color: #000;
+        padding: 15px 16px;
+        text-decoration: none;
+      }
+
+      ul.sidenav li a.active {
+        background-color: #222;
+        color: white;
+      }
+
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #222;
+        color: white;
+      }
+
+      div.content {
+        padding: 1px 16px;
+      }
+
+      #padding_title {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      #REAL {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .column {
+        float: left;
+        width: 65%;
+        padding: 0.5em;
+        padding-right: 13%;
+      }
+
+      .column1 {
+        float: left;
+        width: 35%;
+        padding: 0.5em;
+        padding-left: 13%;
+      }
+
+      #sideCOL {
+        margin-top: 10px;
+        padding: 1px 16px 16px;
+      }
+
+      .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 740px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
+        }
+
+        ul.sidenav {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        #padding_title {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+
+        .column {
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        .column1 {
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        #quote {
+          display: none;
+        }
+
+        #quote1 {
+          display: none;
+        }
+
+        #sideCOL {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        label {
+          display: block;
+        }
+      }
+
+      .bottom-bar {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background: #000;
+        padding: 15px 0;
+      }
+    </style>
+
+    <p style="margin-top: 122px;"></p>
+    <div id="padding_title">
+      <h1 id="REAL">NEXT's Team</h1>
+    </div>
+    <div class="row1">
+      <div class="column1">
+        <ul class="sidenav">
+          <li><a href="about">Mission</a></li>
+          <li><a href="history">History</a></li>
+          <li><a href="whyacu">Why ACU?</a></li>
+          <li><a href="members">NEXT's Team</a></li>
+          <!--<li><a href="#contact">Student</a></li>-->
+          <li>
+            <i
+              id="quote"
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(98, 99, 102);
+                text-align: center;
+                margin-top: 5px;
+              "
+              >"Finding global solutions to the world’s most critical needs"
+            </i>
+          </li>
+        </ul>
+        <aside
+          id="sideCOL"
+          style="
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h3
+            style="
+              color: white;
+              text-align: left;
+              margin-left: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            &rArr; MEDIA COVERAGE
+          </h3>
+          <ul
+            class="home-side-touts"
+            style="color: white; text-align: left; margin-right: 10px;"
+          >
+            <li>
+              <a
+                href="https://acu.today/2020/04/13/baileys-expertise-in-geothermal-design-primed-him-for-role-as-next-lab-senior-mechanical-engineer/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Bailey’s expertise in geothermal design primed him for role as
+                NEXT Lab senior mechanical engineer</a
+              >
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>April 13, 2020</i>
+              </p>
+            </li>
+
+            <li>
+              <a
+                href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >ACU Board of Trustees adds Donny Edwards, Fernando Nasymth and
+                Doug Robison</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>March 6, 2020</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2020/01/13/pamplin-not-only-teaches-chemistry-hes-putting-his-knowledge-into-practice-in-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Pamplin not only teaches chemistry, he’s putting his knowledge
+                into practice in ACU’s NEXT Lab</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>January 13, 2020</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2019/10/30/next-lab-researcher-tackles-project-to-extract-medical-isotope/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab researcher tackles project to extract medical
+                isotope</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>October 30, 2019</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://acu.today/2019/10/02/gibbs-keeps-projects-running-smoothly-at-acus-next-lab/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Gibbs keeps projects running smoothly at ACU’s cutting-edge
+                NEXT Lab</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>October 2, 2019</i>
+              </p>
+            </li>
+
+            <li>
+              <a
+                href="https://diverseeducation.com/article/149979/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Salt at Heart of Nuclear Research for Teams</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>July 18, 2019</i>
+              </p>
+            </li>
+            <li>
+              <a
+                href="https://www.reporternews.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Abilene Christian University science faculty gets salty over
+                future of nuclear power</a
+              >
+
+              <p style="opacity: 0.5; font-size: smaller;">
+                <i>July 7, 2019</i>
+              </p>
+
+              <ul>
+                <i style="opacity: 0.5; font-size: 15px;"
+                  >Other media sites that published the above article</i
+                >
+                <li>
+                  <a
+                    href="https://www.apnews.com/dd6f406f033344a38930be451bd68962?utm_source=myACU+News&utm_campaign=25cb7d8d5c-EMAIL_CAMPAIGN_2019_07_26_07_26&utm_medium=email&utm_term=0_4ad6e94749-25cb7d8d5c-28376341"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >AP News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://amp.usatoday.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >US Today News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.washingtontimes.com/news/2019/jul/17/abilene-christian-university-nuclear-researchers-t/"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >The Washington Times</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.brownsvilleherald.com/news/texas/abilene-christian-university-nuclear-researchers-think-salt/article_5c42d0bb-3431-5f51-a10d-66ebcde8d715.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >The Brownsville Herald</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.valdostadailytimes.com/news/state_news/abilene-christian-university-nuclear-researchers-think-salt/article_df30a469-8215-5e64-b7b5-4b512a198f83.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >Valdosta Daily Times</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.victoriaadvocate.com/ap/state/abilene-christian-university-nuclear-researchers-think-salt/article_fc8c1406-4a39-502e-ab20-e60516fe9f14.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >Victoria Advocate</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://spotontexas.com/northwest-texas/859217/abilene-christian-university-nuclear.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >Spot On Texas</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://thebrunswicknews.com/news/state_news/abilene-christian-university-nuclear-researchers-think-salt/article_df335573-71b5-5969-ab93-5dbaeb034738.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >The Brunswick News</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.mdjonline.com/neighbor_newspapers/news/state/abilene-christian-university-nuclear-researchers-think-salt/article_92e0312e-11be-55a1-97b8-7dd812849983.html"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >Marietta Daily Journal</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.ncadvertiser.com/news/texas/article/Abilene-Christian-University-nuclear-researchers-14101792.php"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >New Canaan Advertiser</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.darientimes.com/news/texas/article/Abilene-Christian-University-nuclear-researchers-14101792.php"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >The Darien Times</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.greenbaypressgazette.com/story/news/columnists/tim-chipp/2019/07/07/education-notebook-abilene-christian-university-science-faculty-salty-over-future-nuclear-power/1657285001/"
+                    target="_blank"
+                    style="opacity: 0.5; font-size: 15px;"
+                    >Green Bay Press Gazette</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a
+                href="http://acu.today/2019/01/29/next-lab-brings-pfeifer-home-to-join-acus-pioneering-research-program/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab brings Pfeifer home to join ACU’s pioneering research
+                program</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>January 29, 2019</i>
+            </p>
+
+            <li>
+              <a
+                href="https://ktxs.com/news/local/robison-excelsior-foundation-pledges-over-3-million-in-funding-for-acus-next-lab"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Robison Excelsior Foundation pledges over $3 million in funding
+                for ACU's NEXT Lab</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>October 29, 2018</i>
+            </p>
+
+            <li>
+              <a
+                href="https://www.powermag.com/technology-selected-for-does-versatile-test-reactor-program/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Technology Selected for DOE’s Versatile Test Reactor Program</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>November 18, 2018</i>
+            </p>
+
+            <li>
+              <a
+                href="http://acu.today/2018/10/16/next-lab-receives-3-2-million-from-robison-excelsior-foundation/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab receives $3.2 million from Robison Excelsior
+                Foundation</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>October 16, 2018</i>
+            </p>
+
+            <li>
+              <a
+                href="https://www.energy.gov/ne/articles/idaho-national-laboratory-awards-39-million-support-proposed-fast-spectrum-test-reactor"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Idaho National Laboratory awards $3.9 Million in support of
+                proposed fast spectrum test reactor</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Oct 5, 2018</i></p>
+
+            <li>
+              <a
+                href="http://acu.today/2018/08/31/next-lab-receives-federal-funding-to-partner-with-idaho-national-lab-mit-yale-and-others-on-research-reactor/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab receives federal funding to partner with Idaho
+                National Lab, MIT, Yale and others on research reactor</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>August 31, 2018</i>
+            </p>
+            <li>
+              <a
+                href="https://www.reporternews.com/story/news/2018/06/26/dcoa-approves-300-000-r-d-dollars-acu-energy-project/736552002/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >DCOA approves $300,000 in R&D dollars for Abilene Christian
+                nuclear energy project</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;">
+              <i>June 26, 2018</i>
+            </p>
+            <li>
+              <a
+                href="http://acu.today/2018/01/25/next-lab-focuses-research-on-solving-global-problems/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >NEXT Lab focuses research on solving global problems</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Jan 25,2018</i></p>
+            <li>
+              <a
+                href="http://acu.today/2018/01/25/rusty-towell-innovative-scholar-down-to-earth-teacher/"
+                target="_blank"
+                style="color: rgb(123, 164, 221);"
+                >Rusty Towell: Innovative scholar, down-to-earth teacher</a
+              >
+            </li>
+            <p style="opacity: 0.5; font-size: smaller;"><i>Jan 25,2018</i></p>
+            <!-- <li><a href="http://www.acu.edu/news/physics-faculty-students-featured-in-science-journal.html" style="color: rgb(123,164,221);" target="_blank">Physics faculty, students featured in science journal </a></li>
                     <p style="opacity: 0.5; font-size: smaller"><i>Jan 18, 2018</i></p> -->
-                    <li><a href="media_coverages" style="color: rgb(123,164,221);">more...</a></li>
-
-                </ul>
-                <!--
+            <li>
+              <a href="media_coverages" style="color: rgb(123, 164, 221);"
+                >more...</a
+              >
+            </li>
+          </ul>
+          <!--
                          <hr />
                          <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; NEXT UPDATES</h3>
                           <ul class="home-side-touts" style="color: white; text-align: left; margin-right: 10px;">
@@ -418,45 +682,116 @@
                              <p style="opacity: 0.5; font-size: smaller"><i>July 2017</i></p>
                          </ul>
                 -->
-                <hr />
-                <h3 style="color: white; text-align: left; margin-left: 10px;  font-size: 20px; font-weight: bold;">&rArr; OUR CAMPUS</h3>
-                <a href="http://www.acu.edu" target="_blank"><img src="image/newaculogo.jpg" style="display: block; padding: 15px 10px 15px 10px; margin: 0 auto; background-color: white; width: 70%; height: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" /></a>
-            </aside>
-        </div>
-        <div class="column">
-            <div class="content" style="background-color: rgb(225,225,225); border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ">
-                <h2 style="color: rgb(98,99,102); font-weight: bold; text-align: center; ">Caleb Hicks </h2>
-                <div style="margin-bottom: 10px;"><img src="image/caleb_h.jpg" style="display: block; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); max-width: 220px; max-height:100%; margin: 0 auto;"/></div>
+          <hr />
+          <h3
+            style="
+              color: white;
+              text-align: left;
+              margin-left: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            &rArr; OUR CAMPUS
+          </h3>
+          <a href="http://www.acu.edu" target="_blank"
+            ><img
+              src="image/newaculogo.jpg"
+              style="
+                display: block;
+                padding: 15px 10px 15px 10px;
+                margin: 0 auto;
+                background-color: white;
+                width: 70%;
+                height: auto;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+          /></a>
+        </aside>
+      </div>
+      <div class="column">
+        <div
+          class="content"
+          style="
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h2
+            style="
+              color: rgb(98, 99, 102);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            Caleb Hicks
+          </h2>
+          <div style="margin-bottom: 10px;">
+            <img
+              src="image/caleb_h.jpg"
+              style="
+                display: block;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                max-width: 220px;
+                max-height: 100%;
+                margin: 0 auto;
+              "
+            />
+          </div>
 
-                <div id="intro" style="text-align: center;">
-                    <p>
-                        <i>Physics Major</i>
-                    </p>
-                    <p>
-                        Graduated: <i>May 2018</i>
-                    </p>
-                    <p>
-                        Email: <a style="color: rgb(123,164,221); font-weight: bold;" href="mailto:crh14b@acu.edu">crh14b@acu.edu</a>
-                    </p>
-                </div>
+          <div id="intro" style="text-align: center;">
+            <p>
+              <i>Physics Major</i>
+            </p>
+            <p>Graduated: <i>May 2018</i></p>
+            <p>
+              Email:
+              <a
+                style="color: rgb(123, 164, 221); font-weight: bold;"
+                href="mailto:crh14b@acu.edu"
+                >crh14b@acu.edu</a
+              >
+            </p>
+          </div>
 
-                <p>
-                    <i>I am a senior physics major at ACU. I primarily work with Dr. Towell on NEXT though I have also worked at NIFFTE in Los Alamos and SeaQuest at Fermilab. </i>
-                </p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold;">NEXT's Contribution</h3>
-                <p>
-                    <i>I have primarily worked on the data acquisition system MIDAS used at NEXT. I have also contributed in small ways to a number of other areas including pump calibrations, transducer testing, etc. </i>
-                </p>
-                <h3 style="color: rgb(98,99,102); font-weight: bold;">What you like about NEXT? </h3>
-                <p>
-                    <i>I like that students are involved in nearly every aspect of NEXT. Students work on everything from the flow loop design to the data analysis. </i>
-                </p>
-            </div>
+          <p>
+            <i
+              >I am a senior physics major at ACU. I primarily work with Dr.
+              Towell on NEXT though I have also worked at NIFFTE in Los Alamos
+              and SeaQuest at Fermilab.
+            </i>
+          </p>
+          <h3 style="color: rgb(98, 99, 102); font-weight: bold;">
+            NEXT's Contribution
+          </h3>
+          <p>
+            <i
+              >I have primarily worked on the data acquisition system MIDAS used
+              at NEXT. I have also contributed in small ways to a number of
+              other areas including pump calibrations, transducer testing, etc.
+            </i>
+          </p>
+          <h3 style="color: rgb(98, 99, 102); font-weight: bold;">
+            What you like about NEXT?
+          </h3>
+          <p>
+            <i
+              >I like that students are involved in nearly every aspect of NEXT.
+              Students work on everything from the flow loop design to the data
+              analysis.
+            </i>
+          </p>
         </div>
+      </div>
     </div>
     <div style="margin-bottom: 20px;"></div>
     <div class="bottom-bar">
-        &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights Reserved.
+      &copy; 2019 by Nuclear Energy eXperiment Testing Lab (NEXT). All Rights
+      Reserved.
     </div>
-</body>
+  </body>
 </html>
