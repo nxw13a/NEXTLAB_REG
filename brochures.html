@@ -15,7 +15,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MEMBERS</title>
+    <title>BROCHURES</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="stylesheet.css" />
@@ -37,7 +37,7 @@
     })(window, document, "script", "dataLayer", "GTM-KP3STB6");
   </script>
   <!-- End Google Tag Manager -->
-  <body style="overflow-x: hidden;">
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -170,52 +170,6 @@
     </script>
 
     <style>
-      section {
-        display: none;
-        padding: 20px 0 0;
-        border-top: 1px solid;
-      }
-
-      input {
-        display: none;
-      }
-
-      label {
-        display: inline-block;
-        width: auto;
-        padding: 15px 25px;
-        font-weight: 600;
-        font-size: larger;
-        text-align: center;
-        color: black;
-        border: 1px solid transparent lightgray;
-        background-color: lightgray;
-      }
-
-      label:before {
-        font-family: fontawesome;
-        font-weight: normal;
-      }
-
-      label:hover {
-        color: white;
-        background-color: rgb(98, 99, 102);
-        cursor: pointer;
-      }
-
-      input:checked + label {
-        color: white;
-        background-color: rgb(98, 99, 102);
-        border: 1px solid #ddd;
-        border-top: 2px solid rgb(98, 99, 102);
-      }
-
-      #tab1:checked ~ #content1,
-      #tab2:checked ~ #content2,
-      #tab3:checked ~ #content3 {
-        display: block;
-      }
-
       * {
         box-sizing: border-box;
       }
@@ -228,8 +182,7 @@
         width: auto;
         background-color: rgb(225, 225, 225);
         position: relative;
-        height: 100%;
-        overflow: auto;
+        height: 50%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
           0 6px 20px 0 rgba(0, 0, 0, 0.19);
       }
@@ -337,13 +290,6 @@
           display: none;
         }
       }
-
-      @media screen and (max-width: 500px) {
-        label {
-          display: block;
-        }
-      }
-
       .bottom-bar {
         position: relative;
         color: white;
@@ -357,13 +303,13 @@
 
     <p style="margin-top: 122px;"></p>
     <div id="padding_title">
-      <h1 id="REAL">NEXT's Team</h1>
+      <h1 id="REAL">Brochures</h1>
     </div>
     <div class="row1">
       <div class="column1">
         <ul class="sidenav">
           <li><a href="about">Mission</a></li>
-          <li><a href="history">History</a></li>
+          <li><a class="active" href="history">History</a></li>
           <li><a href="whyacu">Why ACU?</a></li>
           <li><a href="members">NEXT's Team</a></li>
           <!--<li><a href="#contact">Student</a></li>-->
@@ -427,70 +373,28 @@
               0 6px 20px 0 rgba(0, 0, 0, 0.19);
           "
         >
-          <h2
-            style="
-              color: rgb(98, 99, 102);
-              font-weight: bold;
-              text-align: center;
-            "
-          >
-            Chad Onstead
-          </h2>
-          <div style="margin-bottom: 10px;">
-            <img
-              src="image/chad_onstead.jpg"
-              style="
-                display: block;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                max-width: 220px;
-                max-height: 100%;
-                margin: 0 auto;
-              "
-            />
-          </div>
-
-          <div id="intro" style="text-align: center;">
-            <p>
-              <i>Engineering Major</i>
-            </p>
-            <p>Expected Graduation: <i>May 2021</i></p>
-            <p>
-              Email:
-              <a
-                style="color: rgb(123, 164, 221); font-weight: bold;"
-                href="mailto:cmo15b@acu.edu"
-                >cmo15b@acu.edu</a
-              >
-            </p>
-          </div>
-
-          <p>
-            <i
-              >I grew up in Sugar Land and was homeschooled my whole life. I
-              came to ACU to study Engineering with a mechanical concentration.
-            </i>
-          </p>
-          <h3 style="color: rgb(98, 99, 102); font-weight: bold;">
-            NEXT's Contribution
-          </h3>
-          <p>
-            <i
-              >I work with Dr. Head on developing high temperature
-              instrumentation for the molten salt loop.</i
-            >
-          </p>
-          <h3 style="color: rgb(98, 99, 102); font-weight: bold;">
-            What you like about NEXT?
-          </h3>
-          <p>
-            <i
-              >I enjoy working for NEXT because of many opportunities and
-              diverse fields of study NEXT provides. I also enjoy the many
-              opportunities that NEXT allows us to solve problems while working
-              along side experts in the field.
-            </i>
-          </p>
+        <div style="padding-bottom: 3em;">
+          <a href="brochure1"><img style="float: left; padding-right: 3em;" src="image/brochure1.png" ></a>
+          <p style="margin-right: 220px; font-size: large;">Abilene Christian University’s Nuclear Energy eXperimental
+            Testing (NEXT) Lab – in collaboration with the Georgia Institute
+            of Technology, Texas A&M University, and The University of
+            Texas at Austin – has set ... <a href="brochure1">Read Document</a> </p>
+        </div>
+        <br>
+        <div>
+          <a href="brochure2"><img style="float: left; padding-right: 3em;" src="image/brochure2.png" ></a>
+          <p style="margin-right: 220px; font-size: large;">The mission of Abilene Christian University is to
+             educate students for Christian service and leadership throughout the world. 
+             ACU’s 21st-Century Vision is to be a premier university for ... <a href="brochure2">Read Document</a> </p>
+        </div>
+        <!-- <br>
+        <div>
+          <a href="brochure3"><img style="float: left; padding-right: 3em;" src="image/brochure3.png" ></a>
+          <p style="margin-right: 220px; font-size: large;">The mission of Abilene Christian University is to
+             educate students for Christian service and leadership throughout the world. 
+             ACU’s 21st-Century Vision is to be a premier university for ... <a href="brochure3">Read Document</a> </p>
+        </div> -->
+          
         </div>
       </div>
     </div>
