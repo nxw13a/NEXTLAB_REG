@@ -1,0 +1,492 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-173964082-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-173964082-1");
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MEMBERS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KP3STB6");
+  </script>
+  <!-- End Google Tag Manager -->
+  <body style="overflow-x: hidden;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KP3STB6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav
+      class="navbar navbar-inverse"
+      id="navbar navbar-inverse"
+      style="
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.2s;
+        z-index: 1;
+        border-radius: 0;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home"
+            ><img src="image/logo_newtag.png" height="85" width="200"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">HOME</a></li>
+            <li><a href="videos">VIDEOS</a></li>
+            <li class="active">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ABOUT<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="about">Mission</a></li>
+                <li><a href="history">History</a></li>
+                <li><a href="whyacu">Why ACU?</a></li>
+                <li><a href="members">NEXT's Team</a></li>
+                <li><a href="brochures">Brochures</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >RESEARCH<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="whynuclear">Why Nuclear?</a></li>
+                <li><a href="about_reactor">About Reactor</a></li>
+                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >NEWS<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="media_coverages">Media Coverages</a></li>
+                <li><a href="relatedsites">Related Sites and Stories</a></li>
+              </ul>
+            </li>
+            <li ><a  href="careets"> CAREERS </a></li> 
+            <li><a href="contact_us">CONTACT US</a></li>
+
+            <li>
+              <a
+                href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688"
+                target="_blank"
+                >DONATE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 15 ||
+          document.documentElement.scrollTop > 15
+        ) {
+          document.getElementById("navbar navbar-inverse").style.Top = "10";
+          //console.log(document.body.scrollTop);
+
+          //console.log(document.documentElement.scrollTop);
+        } else {
+          document.getElementById("navbar navbar-inverse").style.Top = "0";
+          //console.log("STOP");
+          //console.log(document.documentElement.scrollTop);
+        }
+      }
+      var lastScrollTop = 0;
+      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+      element.addEventListener(
+        "scroll",
+        function () {
+          // or window.addEventListener("scroll"....
+          var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScrollTop) {
+            // downscroll code
+            console.log("TRUE");
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "20px";
+          } else {
+            // upscroll code
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "0px";
+          }
+          lastScrollTop = st;
+        },
+        false
+      );
+    </script>
+
+    <style>
+      section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid;
+      }
+
+      input {
+        display: none;
+      }
+
+      label {
+        display: inline-block;
+        width: auto;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: larger;
+        text-align: center;
+        color: black;
+        border: 1px solid transparent lightgray;
+        background-color: lightgray;
+      }
+
+      label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+      }
+
+      label:hover {
+        color: white;
+        background-color: rgb(98, 99, 102);
+        cursor: pointer;
+      }
+
+      input:checked + label {
+        color: white;
+        background-color: rgb(98, 99, 102);
+        border: 1px solid #ddd;
+        border-top: 2px solid rgb(98, 99, 102);
+      }
+
+      #tab1:checked ~ #content1,
+      #tab2:checked ~ #content2,
+      #tab3:checked ~ #content3 {
+        display: block;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225, 225, 225);
+        position: relative;
+        height: 50%;
+        overflow: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      ul.sidenav li a {
+        display: block;
+        color: #000;
+        padding: 15px 16px;
+        text-decoration: none;
+      }
+
+      ul.sidenav li a.active {
+        background-color: #222;
+        color: white;
+      }
+
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #222;
+        color: white;
+      }
+
+      div.content {
+        padding: 1px 16px;
+      }
+
+      #padding_title {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      #REAL {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .column {
+        float: left;
+        width: 65%;
+        padding: 0.5em;
+        padding-right: 13%;
+      }
+
+      .column1 {
+        float: left;
+        width: 35%;
+        padding: 0.5em;
+        padding-left: 13%;
+      }
+
+      #sideCOL {
+        margin-top: 10px;
+        padding: 1px 16px 16px;
+      }
+
+      .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      @media screen and (max-width: 740px) {
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
+        }
+
+        ul.sidenav {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        #padding_title {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+
+        .column {
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        .column1 {
+          width: 100%;
+          padding-left: 4%;
+          padding-right: 4%;
+        }
+
+        #quote {
+          display: none;
+        }
+
+        #quote1 {
+          display: none;
+        }
+
+        #sideCOL {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        label {
+          display: block;
+        }
+      }
+
+      .bottom-bar {
+        position: relative;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background: #000;
+        padding: 15px 0;
+      }
+    </style>
+
+    <p style="margin-top: 122px;"></p>
+    <div id="padding_title">
+      <h1 id="REAL">NEXT's Team</h1>
+    </div>
+    <div class="row1">
+      <div class="column1">
+        <ul class="sidenav">
+          <li><a href="about">Mission</a></li>
+          <li><a href="history">History</a></li>
+          <li><a href="whyacu">Why ACU?</a></li>
+          <li><a href="members">NEXT's Team</a></li>
+          <!--<li><a href="#contact">Student</a></li>-->
+          <li>
+            <i
+              id="quote"
+              style="
+                font-size: 18px;
+                font-weight: bold;
+                color: rgb(98, 99, 102);
+                text-align: center;
+                margin-top: 5px;
+              "
+              >"Finding global solutions to the world’s most critical needs"
+            </i>
+          </li>
+        </ul>
+        <aside
+          id="sideCOL"
+          style="
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h3
+            style="
+              color: white;
+              text-align: left;
+              margin-left: 10px;
+              font-size: 20px;
+              font-weight: bold;
+            "
+          >
+            &rArr; OUR CAMPUS
+          </h3>
+          <a href="http://www.acu.edu" target="_blank"
+            ><img
+              src="image/newaculogo.jpg"
+              style="
+                display: block;
+                padding: 15px 10px 15px 10px;
+                margin: 0 auto;
+                background-color: white;
+                width: 70%;
+                height: auto;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+          /></a>
+        </aside>
+      </div>
+      <div class="column">
+        <div
+          class="content"
+          style="
+            background-color: rgb(225, 225, 225);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+        >
+          <h2
+            style="
+              color: rgb(98, 99, 102);
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+           Jonathan Rugamba
+          </h2>
+          <div style="margin-top: 30px; margin-bottom: 30px;">
+            <img
+              src="image/jonathan_rugamba.jpg"
+              style="
+                display: block;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                max-width: 220px;
+                max-height: 100%;
+                margin: 0 auto;
+              "
+            />
+          </div>
+
+          <div id="intro" style="text-align: center;">
+            <p>
+              <i>Masters of Accountancy</i>
+            </p>
+            <p>Expected Graduation: <i>May 2022</i></p>
+            <p>
+              Email:
+              <a
+                style="color: rgb(123, 164, 221); font-weight: bold;"
+                href="jxr14b@acu.edu">jxr14b@acu.edu</a
+              >
+            </p>
+          </div>
+
+          <p>
+            <i
+              >I am very passionate about finding approaches to poverty eradication through finance and for-profit initiatives especially in Rwanda, which is my country of origin. 
+              I am very thankful for being part of NEXT and getting to contribute to a project that has the potential to change society.</i
+            >
+          </p>
+          <h3 style="color: rgb(98, 99, 102); font-weight: bold;">
+            NEXT's Contribution
+          </h3>
+          <p>
+            <i>
+                Part of the SmartSheet solution's team
+             
+            </i>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <div style="margin-bottom: 20px;"></div>
+    <div class="bottom-bar">
+      &copy; 2019 by Nuclear Energy eXperimental Testing Lab (NEXT). All Rights Reserved.
+    </div>
+  </body>
+</html>
