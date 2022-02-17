@@ -1,0 +1,712 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=UA-173964082-1"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "UA-173964082-1");
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CAREERS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="image/blogo.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KP3STB6");
+  </script>
+  <!-- End Google Tag Manager -->
+  <body style="overflow-x: hidden;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KP3STB6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <nav
+      class="navbar navbar-inverse"
+      id="navbar navbar-inverse"
+      style="
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        display: block;
+        transition: top 0.2s;
+        z-index: 1;
+        border-radius: 0;
+      "
+    >
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home"
+            ><img src="image/logo_newtag.png" height="85" width="200"
+          /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">HOME</a></li>
+            <li ><a href="videos">VIDEOS</a></li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ABOUT<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="about">Mission</a></li>
+                <li><a href="history">History</a></li>
+                <li><a href="whyacu">Why ACU?</a></li>
+                <li><a href="members">NEXT Team</a></li>
+                <li><a href="brochures">Brochures</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >RESEARCH<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="whynuclear">Why Nuclear?</a></li>
+                <li><a href="about_reactor">About Reactor</a></li>
+                <li><a href="reactor_benefits">Reactor's Benefits</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >NEWS<span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="media_coverages">Media Coverages</a></li>
+                <li><a href="relatedsites">Related Sites and Stories</a></li>
+              </ul>
+            </li>
+            <li class="active" ><a  href="careers"> CAREERS </a></li>
+            <li><a href="contact_us">CONTACT US</a></li>
+
+            <li>
+              <a
+                href="https://securelb.imodules.com/s/1565/form/interior.aspx?sid=1565&gid=1&pgid=1688"
+                target="_blank"
+                >DONATE</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 15 ||
+          document.documentElement.scrollTop > 15
+        ) {
+          document.getElementById("navbar navbar-inverse").style.Top = "10";
+          //console.log(document.body.scrollTop);
+
+          //console.log(document.documentElement.scrollTop);
+        } else {
+          document.getElementById("navbar navbar-inverse").style.Top = "0";
+          //console.log("STOP");
+          //console.log(document.documentElement.scrollTop);
+        }
+      }
+      var lastScrollTop = 0;
+      // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+      element.addEventListener(
+        "scroll",
+        function () {
+          // or window.addEventListener("scroll"....
+          var st = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+          if (st > lastScrollTop) {
+            // downscroll code
+            console.log("TRUE");
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "20px";
+          } else {
+            // upscroll code
+            document.getElementById("navbar navbar-inverse").style.marginTop =
+              "0px";
+          }
+          lastScrollTop = st;
+        },
+        false
+      );
+    </script>
+
+    <style>
+      section {
+        display: none;
+        padding: 20px 0 0;
+        border-top: 1px solid;
+      }
+
+      input {
+        display: none;
+      }
+
+      label {
+        display: inline-block;
+        width: auto;
+        padding: 15px 25px;
+        font-weight: 600;
+        font-size: larger;
+        text-align: center;
+        color: black;
+        border: 1px solid transparent lightgray;
+        background-color: lightgray;
+      }
+
+      label:before {
+        font-family: fontawesome;
+        font-weight: normal;
+      }
+
+      label:hover {
+        color: white;
+        background-color: #222;
+        cursor: pointer;
+      }
+
+      input:checked + label {
+        color: white;
+        background-color: #222;
+        border: 1px solid #ddd;
+        border-top: 2px solid #222;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      ul.sidenav {
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: rgb(225, 225, 225);
+        position: relative;
+        height: 50%;
+        overflow: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      ul.sidenav li a {
+        display: block;
+        color: #000;
+        padding: 15px 16px;
+        text-decoration: none;
+      }
+
+      ul.sidenav li a.active {
+        background-color: #222;
+        color: white;
+      }
+
+      ul.sidenav li a:hover:not(.active) {
+        background-color: #222;
+        color: white;
+      }
+
+      #padding_title {
+        padding-left: 12%;
+        padding-right: 12%;
+      }
+
+      #REAL {
+        color: white;
+        text-align: center;
+        padding: 5px;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      #sideCOL {
+        margin-top: 10px;
+        padding: 1px 16px 16px;
+      }
+
+      .main_row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .main_row {
+        text-align: center;
+        margin-top: 110px;
+        margin: auto;
+      }
+
+      .layer p {
+            width: 50%;
+            height: 100%;
+            padding-top: 180px;
+            padding-left: 30px;
+            padding-right: 20px;
+            padding-left: none;
+            color: white;
+            font-size: 18px;
+            text-align: center;
+     
+        }
+
+      @media screen and (max-width: 740px) {
+
+        img #career_image{
+          height: 15px;
+        }
+        
+        .layer p {
+            width: 100%;
+            height: 100%;
+            padding-top: 120px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-left: none;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+     
+        }
+        ul.sidenav li a {
+          text-align: center;
+          float: none;
+        }
+
+        ul.sidenav {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        #padding_title {
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+
+        #quote {
+          display: none;
+        }
+
+        #quote1 {
+          display: none;
+        }
+
+        #sideCOL {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        label {
+          display: block;
+        }
+        .column {
+          padding-right: 3%;
+          padding-top: 3%;
+          text-align: center;
+        }
+
+        .column1 {
+          float: left;
+          width: 75%;
+          padding: 0.5em;
+          padding-left: 3%;
+          padding-bottom: 3%;
+        }
+      }
+
+      .bottom-bar {
+        position: fixed;
+        padding: 10px 10px 0px 10px;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        color: white;
+        text-align: center;
+        font-size: 0.8em;
+        text-transform: uppercase;
+        background: #000;
+        padding: 15px 0;
+      }
+
+      .row {
+        margin-bottom: 30px;
+        border-top: ridge;
+      }
+
+      .video-responsive {
+        overflow: hidden;
+        padding-bottom: 70%;
+        padding-right: 20px;
+        position: relative;
+        height: 0;
+      }
+      .video-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      .slides {
+        font-size: 130%;
+        font-weight: bold;
+      }
+
+      .containerVid1 {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+      }
+      .slides {
+        font-size: 130%;
+        font-weight: bold;
+      }
+
+      .row1:after {
+        content: "";
+        display: table;
+        clear: both;
+        border-top: ridge;
+      }
+
+      .row1 {
+        border-top: ridge;
+      }
+
+      .column {
+        padding-right: 3%;
+        padding-top: 3%;
+        text-align: center;
+        padding-right: 13%;
+      }
+
+      .column1 {
+        float: left;
+        width: 70%;
+        padding: 0.5em;
+        padding-left: 13%;
+        padding-bottom: 3%;
+      }
+      .background1 {
+        width: 100%;
+        margin-top: 110px;
+        height: 400px;
+        background-image: url(image/home_background.JPG);
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .container1 {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      .layer {
+        width: 100%;
+        margin-top: 0px;
+        height: 400px;
+        background-size: cover;
+        background-position: center center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-image: linear-gradient(to right, black 30%, transparent);
+        }   
+        .overview {
+            width: 40%;
+            height: 300px;
+            padding-top: 200px;
+            padding-left: 20px;
+            color: white;
+            font-size: 18px;
+     
+        }
+        .jobs{
+          margin-bottom: 20%;
+        }
+        .job1, .job2 {
+          width: 50%;
+          height: 350px;
+          padding-bottom: 20px;
+          border-color: #222222;
+          padding-left: 0px;
+          margin-left: 10%;
+          margin-bottom: 6%;
+          
+        }
+        .table{
+          margin-left: 20%;
+          width: 500px;
+        }
+        .more-job-info{
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+        .button{
+          background-color: grey;
+          border: none;
+          color: white;
+          padding: 8px 15px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        .button:hover{
+          background-color: #4CAF50;
+          padding: 10px 15px;
+          color: white;
+;
+        }
+
+
+        ol {
+        list-style: decimal;
+        padding-left: 40px;
+  
+        }
+      ol li{
+      display: inline;
+      list-style: none;
+      margin-left: 40px;
+}
+    </style>
+
+    <div class="main_row">
+        <div class="background1">
+            <div class="layer">
+                <!-- <div class="overview"> -->
+                    <p>The NEXT Lab has a team of innovative researchers at Abilene Christian University focused on providing global solutions to the world's most critical needs through the development of molten salt reactors. We strive for excellence and work hard everyday to provide solutions to the need for energy, water and medical isotopes. We invite you to join our team!</p>
+                <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="column">
+          <!-- <h2>Employment Opportunities at NEXT</h2> -->
+            <!-- <div class="job1" >
+              <a href="https://acucareers.acu.edu/cw/en-us/job/493049/instrumentation-and-electrical-engineer" target="_blank">
+              <h3>Instrumentation and Electrical Engineer</h3>
+              </a>
+              <div class="more-job-info">
+                <a class="button" id="readmore-link" href="https://acucareers.acu.edu/cw/en-us/job/493049/instrumentation-and-electrical-engineer" target="_blank"> Read more info</a>
+                <a class="button" id="apply-link" href="https://secure.dc4.pageuppeople.com/apply/869/aw/applicationForm/initApplication.asp?lJobID=493049&sLanguage=en-us&sSourcePointer=aw&lJobSourceTypeID=796" target="_blank"> Apply Here</a>
+              </div>
+              <TABLE BORDER="1" class="table">
+                <TR>
+                  <TD>Job no: <b>493049</b> </TD>
+                  <TD>Work type: <b>Staff Full-time</b></TD>
+                </TR>
+                <TR>
+                  <TD>Location: <b>Abilene</b></TD>
+                  <TD>Category: <b>Staff</b></TD>
+                </TR>
+                <TR>
+                  <TD><b>Basic Responsibilities</b> </TD>
+                  <TD>
+                    <p>a. Assist with the design, implementation, and documentation of the data acquisition and control systems for research projects.</p>
+                    <p>b. Write software as needed to facilitate human machine interfaces.</p>
+                    <p>c. Provide guidance to students as needed on instrumentation and procedures.</p>
+                  </TD>
+                </TR>
+              </TABLE>
+            </div> -->
+            <div class="job2; comumn1" >
+              <!-- <a href="https://app.smartsheet.com/b/form/be52faaff32d415cb185ce7f45b4b250" target="_blank">
+                
+              <h3>New Student Employee Job Application</h3>
+              </a> -->
+              <h2>Student Summer Internships 2022</h2>
+
+                <div style="margin-top: 10px; margin-bottom: 10px;">
+                  
+                  <div class="column1" style="margin-left: 2px; width: 77%;">
+                    <div>
+                      <img id="career_image"
+                    src="image/career_image.png" 
+                    style="height: 700 px; width: 90%px; margin-left: 2px;"
+                    
+                  />
+                    </div>
+                    
+
+
+
+
+                  <div class=" margin-top:10px " style="text-align: left; margin-left: 4px; margin-right: 0px; margin-top: 18px;">
+                    <p style="margin-left: 2px;" >
+                      <font size="3"> 
+                      <b>The mission of ACU’s NEXT Lab</b> is to provide global solutions to the world’s need for energy, water and medical isotopes by advancing the technology of molten salt reactors while educating future leaders in nuclear science and engineering.<br><br>
+      
+                      <b>The NEXT Lab Summer Student Internship is designed as a 10- to 12-week program at the NEXT Lab in Abilene, TX.</b> <br><br>
+                      <b> Interns will work 40 hours a week</b> and will be assigned to a research mentor, obtaining real-world experience with the engineers, physicists, chemists, mathematicians, and computer scientists that are building the molten salt research reactor (MSRR). 
+                      Our interns come from a variety of disciplines in addition to those mentioned above. <br><br>
+                      
+                      Internships begin with a <b>mandatory full-day orientation on May, 23, 2022.</b>  
+                      For questions or concerns, contact <a href="mailto:bicky.tolar@acu.edu" style="color:rgb(101, 158, 238);" target="_blank">Bicky Tolar</a>. <br><br>
+                      To apply, please <a href="https://app.smartsheet.com/b/form/be52faaff32d415cb185ce7f45b4b250" style="color:rgb(101, 158, 238);" target="_blank">complete the application form</a> by February 18, 2022. 
+      
+                    </font>
+                      
+                    </p>
+      
+                    <div class="more-job-info">
+                      <a class="button" id="apply-link" href="https://app.smartsheet.com/b/form/be52faaff32d415cb185ce7f45b4b250" target="_blank"> Apply Here</a>
+                    </div>
+
+                    <br>
+                    <h4> <b>Summer Housing:</b></h1>
+                      <p>  If you need housing during your summer internship, there are several on-campus options available to you.</p>
+                      <br>
+                    <h5> <b>Option 1: </b> <a href="https://cdn01.acu.edu/community/student-life/residence-life/university-park.html" style="color:rgb(101, 158, 238); font-weight:bold" target="_blank">University Park Apartments 2 bed, 2 bath</a></h2>
+
+                    <p>
+                      <b>Dates Available:</b> May 21 - August 7, 2022<br>
+                      <b>Price:</b> $160/week per person<br>
+                      <b>Details:</b> 610 square feet, full kitchen, living area. Furnished. On-site laundry facilities.     
+                    </p>
+                    <br>
+
+                  <h5> <b>Option 2: </b> <a href="https://cdn01.acu.edu/community/student-life/residence-life/university-park.html" style="color:rgb(101, 158, 238); font-weight:bold" target="_blank">University Park Apartments 4 bed, 2 bath </a> </h2>
+                  <p>
+                    <b>Dates Available:</b> May 21 - August 7, 2022<br>
+                    <b>Price:</b> $135/week per person
+
+                    <br>
+                    <b>Details:</b> 873 square feet, full kitchen, living area. Furnished. On-site laundry facilities.     
+                  </p>
+                  <br>
+                  <h5> <b>Option 3: </b> <a href="https://www.acu.edu/student-life/life-on-campus/housing/adams-hall/" style="color:rgb(101, 158, 238); font-weight:bold" target="_blank"> Smith-Adams Residence Hall </a></h2>
+                  <p>
+                    Dates Available: May 21 - August 7, 2022<br>
+                    <b>Price:</b> $115/week per person<br>
+                    <b>Details:</b> 240 square feet. Double occupancy, 1 private bathroom. Shared kitchen and 
+                    grill. Lobby with TV and game tables. On-site laundry facilities.     
+                  </p>
+
+                  </div>
+                  
+
+                </div>
+                
+
+                  </div>
+
+                </div>
+
+               
+
+
+                
+
+                
+
+                <div style="margin-top: 10px; margin-bottom: 10px;">
+                  
+                  <div class="margin-bottom: 6px;">
+
+                   <ol id="list">
+                  <li><img src="image/nextra_rogo.png" style="width: 250px; height: 250px; margin-bottom: 80px;"/></li>
+                  <li><img src="image/next_allie.png " style="width: 200px; height: 200px; margin-bottom: 80px;"></li>
+                  <li><img src="image/next_ally.png" style="width: 200px; height: 200px; margin-bottom: 80px;"></li>
+                  <li><img src="image/a&m_logo.png" style="width: 300px; height: 300px; margin-bottom: 80px;"></li>
+                  </ol>
+                  </div>
+  
+                  
+                </div>
+
+
+             
+              <!-- <TABLE BORDER="1" class="table">
+                
+                <TR>
+                  <TD><p>NEXT Lab is always looking for hard working students with problem solving skills in the STEM fields - specifically engineering, physics, computer science and math, <a href="https://app.smartsheet.com/b/form/be52faaff32d415cb185ce7f45b4b250">Apply at this link.</a> </p></TD>
+                </TR>
+              </TABLE> -->
+            </div>
+
+
+
+            <!-- <div class="column3; margin-top:2px " style="text-align: left; margin-left: 4px; margin-right: 0px; margin-top: 2px;">
+              <p style="margin-left: 2px;">
+                The mission of ACU’s NEXT Lab is to provide global solutions to the world’s need for energy, water and medical isotopes by advancing the technology of molten salt reactors while educating future leaders in nuclear science and engineering.<br><br>
+
+                The NEXT Lab Summer Student Internship is designed as a 10- to 12-week program at the NEXT Lab in Abilene, TX. <br><br>
+                Interns will work 40 hours a week and will be assigned to a research mentor, obtaining real-world experience with the engineers, physicists, chemists, mathematicians, and computer scientists that are building the molten salt research reactor (MSRR). 
+                Our interns come from a variety of disciplines in addition to those mentioned above. <br><br>
+                
+                Internships begin with a mandatory full-day orientation on May, 18, 2022. 
+                Summer housing information available upon request. 
+                For questions or concerns, contact Bicky Tolar.<br><br>
+                To apply, please complete the application form by February 18, 2022. 
+
+
+                
+              </p>
+
+              <div class="more-job-info">
+                <a class="button" id="apply-link" href="https://app.smartsheet.com/b/form/be52faaff32d415cb185ce7f45b4b250" target="_blank"> Apply Here</a>
+              </div>
+            </div> -->
+
+           
+
+
+        </div>
+
+    </div>
+    <div style="margin-bottom: 20px;"></div>
+    <div class="bottom-bar">
+      &copy; 2022 by Nuclear Energy eXperimental Testing Lab (NEXT). All Rights Reserved.
+    </div>
+  </body>
+</html>
